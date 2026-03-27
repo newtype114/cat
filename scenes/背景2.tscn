@@ -1,0 +1,91 @@
+[gd_scene load_steps=9 format=3 uid="uid://crrtgm5c3etnr"]
+
+[ext_resource type="PackedScene" uid="uid://dpu6qclhe87wr" path="res://scenes/player_2.tscn" id="1_3gdse"]
+[ext_resource type="Script" uid="uid://ch2eitutsyebr" path="res://scripts/gamemanager2.gd" id="1_ljpss"]
+[ext_resource type="Texture2D" uid="uid://66l88yq6030h" path="res://基米入侵/林深不知处.jpg" id="1_mltg1"]
+[ext_resource type="PackedScene" uid="uid://doeh0mq45yxhb" path="res://scenes/cat2.tscn" id="2_h8l2j"]
+[ext_resource type="PackedScene" uid="uid://u7pfyw8fbaf0" path="res://scenes/speed_cat.tscn" id="3_64y6g"]
+[ext_resource type="AudioStream" uid="uid://b0tp3qmlb8q2x" path="res://基米入侵/璃乃/声音/声音/滑雪大冒险.mp3" id="5_cqaeb"]
+[ext_resource type="AudioStream" uid="uid://bbk4f2itd2qpq" path="res://基米入侵/静流1/音频/雷普神！何宇-战歌.mp3" id="7_nk7ms"]
+[ext_resource type="PackedScene" uid="uid://caemr54fyd4el" path="res://scenes/light_sword.tscn" id="8_mrerm"]
+
+[node name="背景2" type="Node2D" node_paths=PackedStringArray("score_label", "game_over_label", "finish_label")]
+script = ExtResource("1_ljpss")
+score_label = NodePath("CanvasLayer/Label")
+game_over_label = NodePath("CanvasLayer/gameover")
+cat_scene = ExtResource("2_h8l2j")
+speed_cat_scene = ExtResource("3_64y6g")
+finish_label = NodePath("finish")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(558, 290)
+scale = Vector2(1.16148, 1.16148)
+texture = ExtResource("1_mltg1")
+
+[node name="player2" parent="." instance=ExtResource("1_3gdse")]
+position = Vector2(94, 541)
+
+[node name="cat2" parent="." instance=ExtResource("2_h8l2j")]
+position = Vector2(1202, 630)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 1039.0
+offset_top = 24.0
+offset_right = 1119.0
+offset_bottom = 47.0
+text = "当前得分："
+
+[node name="gameover" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="bgm2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_cqaeb")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_nk7ms")
+
+[node name="light sword" parent="." instance=ExtResource("8_mrerm")]
+visible = false
+position = Vector2(612, 459)
+
+[node name="finish" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 538.0
+offset_top = 274.0
+offset_right = 666.0
+offset_bottom = 297.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(6.257e-07, 0, 0.520973, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "关卡完成，跳转中.。。"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1038.0
+offset_top = 1.0
+offset_right = 1146.0
+offset_bottom = 24.0
+text = "目标分数：800"
+
+[connection signal="timeout" from="Timer" to="." method="_spawn_cat"]
+[connection signal="timeout" from="Timer2" to="." method="_speed_cat"]

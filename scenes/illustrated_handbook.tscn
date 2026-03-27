@@ -1,0 +1,115 @@
+[gd_scene load_steps=9 format=3 uid="uid://c5xcsiu76qmf1"]
+
+[ext_resource type="AudioStream" uid="uid://dt75abepywwe2" path="res://基米入侵/舌尖上的哈基米.mp3" id="1_6phym"]
+[ext_resource type="Script" uid="uid://c761xj3qdcnku" path="res://scripts/illustrated_handbook.gd" id="1_nlw16"]
+[ext_resource type="Texture2D" uid="uid://dl5neaya2aljw" path="res://基米入侵/移动/frame_0_delay-0.08s.png" id="2_o6sj3"]
+[ext_resource type="Texture2D" uid="uid://bmfugxa4skb74" path="res://基米入侵/耄耋/SPEED/frame_0_delay-0.02s.png" id="4_ugc5d"]
+[ext_resource type="Texture2D" uid="uid://c63pu8h0ebl00" path="res://基米入侵/耄耋/R_CAT/frame_00_delay-0.02s.png" id="5_x8hhk"]
+[ext_resource type="Texture2D" uid="uid://dkx8qchxnjhv0" path="res://基米入侵/耄耋/篮球耄耋/frame_01_delay-0.04s.png" id="6_jpiec"]
+[ext_resource type="Texture2D" uid="uid://cvyk04wpnsk2h" path="res://基米入侵/耄耋/马耄耋1/frame_0_delay-0.08s.png" id="7_ugc5d"]
+[ext_resource type="Texture2D" uid="uid://dhnvrpxo66yyh" path="res://基米入侵/立绘/c687b133-b5b9-4a18-86a6-9434391b639f.png" id="8_x8hhk"]
+
+[node name="IllustratedHandbook" type="Node2D"]
+script = ExtResource("1_nlw16")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1452.0
+offset_bottom = 885.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_6phym")
+autoplay = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(154.175, 74.25)
+scale = Vector2(0.582895, 0.634091)
+texture = ExtResource("2_o6sj3")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 303.0
+offset_top = 45.0
+offset_right = 543.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "普通耄耋，会哈气"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(148, 225)
+scale = Vector2(2.525, 2.525)
+texture = ExtResource("4_ugc5d")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 304.0
+offset_top = 196.0
+offset_right = 544.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "战车耄耋，会撞人"
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(154, 390)
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("5_x8hhk")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 277.0
+offset_top = 378.0
+offset_right = 577.0
+offset_bottom = 420.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "哈基米大旋风，会吃分"
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(156, 554)
+scale = Vector2(2.54082, 2.54082)
+texture = ExtResource("6_jpiec")
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 244.0
+offset_top = 535.0
+offset_right = 684.0
+offset_bottom = 577.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "篮球耄耋，会唱，跳，rop，篮球"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 12.0
+offset_top = 588.0
+offset_right = 70.0
+offset_bottom = 631.0
+theme_override_font_sizes/font_size = 25
+text = "返回"
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(725, 64)
+scale = Vector2(1.64634, 1.64634)
+texture = ExtResource("7_ugc5d")
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 809.0
+offset_top = 43.0
+offset_right = 1049.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "草泥马耄耋，会跑"
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(718, 287)
+scale = Vector2(0.125977, 0.125977)
+texture = ExtResource("8_x8hhk")
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 816.0
+offset_top = 252.0
+offset_right = 1056.0
+offset_bottom = 294.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "更多耄耋，待开发"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

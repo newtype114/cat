@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://caemr54fyd4el"]
+
+[ext_resource type="Texture2D" uid="uid://duirmmche6rl2" path="res://基米入侵/静流1/光剑.png" id="1_1p215"]
+[ext_resource type="Script" uid="uid://drxkifibvmhdd" path="res://scenes/light_sword.gd" id="1_4ensm"]
+
+[node name="light sword" type="Area2D" groups=["player_attack"]]
+position = Vector2(141, 96)
+rotation = -1.0472
+script = ExtResource("1_4ensm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.05176e-05, -3.05176e-05)
+scale = Vector2(0.0582661, 0.0781502)
+texture = ExtResource("1_1p215")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-2, 55, -1, 61, 5, 38, 8, 4, 9, -59, 8, -67, 14, -71, 32, -74, 6, -81, 0, -122, -6, -85, -13, -78, -30, -74, -24, -70, -9, -69, -7, -62, -8, -54, -9, -13, -8, 19, -7, 29)

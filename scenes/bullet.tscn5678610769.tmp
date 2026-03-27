@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsxsacckl5dqk"]
+
+[ext_resource type="Texture2D" uid="uid://bmo3lj20qq08m" path="res://基米入侵/璃乃/QQ图片20250605174150.png" id="1_mkf8s"]
+[ext_resource type="Script" uid="uid://botp13hq66gec" path="res://scripts/bullet.gd" id="1_y25gk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkf8s"]
+size = Vector2(42, 9)
+
+[node name="Area2D" type="Area2D" groups=["bullet"]]
+script = ExtResource("1_y25gk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-27, -9.59233e-14)
+rotation = 1.5708
+scale = Vector2(0.028619, 0.028619)
+texture = ExtResource("1_mkf8s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17, 0.5)
+shape = SubResource("RectangleShape2D_mkf8s")

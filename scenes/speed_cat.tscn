@@ -1,0 +1,136 @@
+[gd_scene load_steps=24 format=3 uid="uid://u7pfyw8fbaf0"]
+
+[ext_resource type="Texture2D" uid="uid://bmfugxa4skb74" path="res://基米入侵/耄耋/SPEED/frame_0_delay-0.02s.png" id="1_5yyx5"]
+[ext_resource type="Script" uid="uid://ddcfagpw74oug" path="res://scripts/speed_cat.gd" id="1_8374p"]
+[ext_resource type="Texture2D" uid="uid://bchq01ijeixoy" path="res://基米入侵/耄耋/SPEED/frame_1_delay-0.02s.png" id="2_8374p"]
+[ext_resource type="PackedScene" uid="uid://dl0qy5428yg6w" path="res://scenes/star.tscn" id="2_c2d3p"]
+[ext_resource type="Texture2D" uid="uid://b38c2fnopm2et" path="res://AssetBundle/Sprites/SlimerDeath.png" id="2_cfm6a"]
+[ext_resource type="Texture2D" uid="uid://dk0ofnqbkq4r2" path="res://基米入侵/耄耋/SPEED/frame_2_delay-0.02s.png" id="3_cfm6a"]
+[ext_resource type="Texture2D" uid="uid://1kf646fujqgk" path="res://基米入侵/耄耋/SPEED/frame_3_delay-0.02s.png" id="4_rfggl"]
+[ext_resource type="AudioStream" uid="uid://bn0khhw50xibi" path="res://基米入侵/耄耋/SPEED/speed—cat.mp3" id="7_rfggl"]
+[ext_resource type="AudioStream" uid="uid://nye6mieanyjp" path="res://基米入侵/耄耋/SPEED/爆炸.mp3" id="8_vjs2p"]
+[ext_resource type="AudioStream" uid="uid://byxsmlff1l7ca" path="res://基米入侵/星星闪光_爱给网_aigei_com.mp3" id="10_ub3hg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfggl"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(0, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qf2vc"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(64, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gsy0"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(128, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwklr"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(192, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4a87"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(256, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyuh2"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(320, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epurq"]
+atlas = ExtResource("2_cfm6a")
+region = Rect2(384, 0, 64, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjs2p"]
+atlas = ExtResource("1_5yyx5")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2d3p"]
+atlas = ExtResource("2_8374p")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub3hg"]
+atlas = ExtResource("3_cfm6a")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hx58y"]
+atlas = ExtResource("4_rfggl")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qf2vc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfggl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qf2vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gsy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwklr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4a87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyuh2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epurq")
+}],
+"loop": false,
+"name": &"death",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjs2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2d3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub3hg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hx58y")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5yyx5"]
+radius = 30.6811
+
+[node name="speed_cat" type="Area2D" groups=["enemy"]]
+scale = Vector2(0.327559, 0.327559)
+script = ExtResource("1_8374p")
+start_scene = ExtResource("2_c2d3p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.79069, 1.79069)
+sprite_frames = SubResource("SpriteFrames_qf2vc")
+animation = &"death"
+autoplay = "run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.05289, 0)
+shape = SubResource("CircleShape2D_5yyx5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_rfggl")
+volume_db = -14.054
+
+[node name="boom" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_vjs2p")
+volume_db = -6.559
+
+[node name="闪光" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ub3hg")
+volume_db = -7.495
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

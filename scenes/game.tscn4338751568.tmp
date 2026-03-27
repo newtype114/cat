@@ -1,0 +1,157 @@
+[gd_scene load_steps=10 format=3 uid="uid://bsu3cap6jpcn0"]
+
+[ext_resource type="Script" uid="uid://iohhs4gvyfo8" path="res://scripts/gamemanager.gd" id="1_lbhrr"]
+[ext_resource type="Texture2D" uid="uid://b1uo5qqg5cg8r" path="res://AssetBundle/Sprites/ForestBackground.png" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://bbspxsi7ej0hy" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://doeh0mq45yxhb" path="res://scenes/cat2.tscn" id="5_iywne"]
+[ext_resource type="FontFile" uid="uid://bfnbrh5ptlmvh" path="res://AssetBundle/Uranus_Pixel_11Px.ttf" id="5_p57ef"]
+[ext_resource type="AudioStream" uid="uid://bfkfn0rgikt4s" path="res://基米入侵/哈基米.mp3" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://u7pfyw8fbaf0" path="res://scenes/speed_cat.tscn" id="7_u5sy4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yqjtg"]
+distance = -41.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lnu2h"]
+distance = 1.00005
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("score_label", "HP", "game_over_label")]
+z_index = 1
+y_sort_enabled = true
+script = ExtResource("1_lbhrr")
+cat_scene = ExtResource("5_iywne")
+speed_cat_scene = ExtResource("7_u5sy4")
+score_label = NodePath("CanvasLayer/Label")
+HP = NodePath("CanvasLayer/Label")
+game_over_label = NodePath("CanvasLayer/game over label")
+
+[node name="background1" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-240, -17.5)
+scale = Vector2(1, 1.36071)
+texture = ExtResource("1_uwrxv")
+
+[node name="background2" type="Sprite2D" parent="background1"]
+position = Vector2(478, 0.73491)
+scale = Vector2(1, 0.994753)
+texture = ExtResource("1_uwrxv")
+
+[node name="background" type="Sprite2D" parent="background1"]
+position = Vector2(240, 0.73491)
+scale = Vector2(1, 0.994753)
+texture = ExtResource("1_uwrxv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.88, 1.88)
+metadata/_edit_lock_ = true
+
+[node name="playernode" parent="." instance=ExtResource("2_yqjtg")]
+position = Vector2(-272, 85)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-266, 76)
+rotation = 1.5731
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("WorldBoundaryShape2D_yqjtg")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(265, 1)
+rotation = -1.56564
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource("WorldBoundaryShape2D_yqjtg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3, 173)
+shape = SubResource("WorldBoundaryShape2D_lnu2h")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-60, 44)
+rotation = -3.14159
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-61.9998, 34.0003)
+shape = SubResource("WorldBoundaryShape2D_lnu2h")
+
+[node name="cat2" parent="." instance=ExtResource("5_iywne")]
+position = Vector2(331, 99)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 1052.0
+offset_top = 4.0
+offset_right = 1100.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("5_p57ef")
+text = "得分："
+
+[node name="game over label" type="Label" parent="CanvasLayer"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.0
+offset_top = -73.0
+offset_right = 127.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_p57ef")
+theme_override_font_sizes/font_size = 100
+text = "游戏结束"
+
+[node name="Label3" type="Label" parent="CanvasLayer/game over label"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 124.0
+offset_right = 247.0
+offset_bottom = 147.0
+text = "thank you"
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_p57ef")
+autoplay = true
+
+[node name="speed_cat" parent="." instance=ExtResource("7_u5sy4")]
+position = Vector2(275, 66)
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="MP_Bar" type="TextureProgressBar" parent="CanvasLayer2"]
+offset_right = 40.0
+offset_bottom = 40.0
+max_value = 10.0
+
+[node name="Background" type="TextureRect" parent="CanvasLayer2/MP_Bar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Fill" type="TextureRect" parent="CanvasLayer2/MP_Bar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer2/MP_Bar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="timeout" from="Timer" to="." method="_spawn_cat"]
+[connection signal="timeout" from="Timer2" to="." method="_spawn_speed_cat"]

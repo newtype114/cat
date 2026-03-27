@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfvwg3wqcej1j"]
+
+[ext_resource type="Script" uid="uid://cx3a387rib5f3" path="res://scripts/start_menu.gd" id="1_ouf4f"]
+[ext_resource type="Texture2D" uid="uid://d3ref6j3irbx5" path="res://基米入侵/QQ图片20250617150436.jpg" id="2_thu50"]
+[ext_resource type="AudioStream" uid="uid://tr6dph7o3sp5" path="res://基米入侵/璃乃/声音/五星通缉.mp3" id="3_h61rw"]
+[ext_resource type="AudioStream" uid="uid://od7akmvsf72x" path="res://基米入侵/璃乃/声音/声音/大悲咒.mp3" id="4_h61rw"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ouf4f")
+
+[node name="Qq图片20250617150436" type="Sprite2D" parent="."]
+position = Vector2(597, 324)
+scale = Vector2(2.5789, 2.81014)
+texture = ExtResource("2_thu50")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 338.0
+offset_top = -20.0
+offset_right = 1138.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.839216, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "基米入侵"
+
+[node name="startbutton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 164.0
+offset_right = 330.0
+offset_bottom = 282.0
+theme_override_font_sizes/font_size = 80
+text = "开始游戏"
+
+[node name="quitbutton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 499.0
+offset_right = 219.0
+offset_bottom = 576.0
+theme_override_font_sizes/font_size = 50
+text = "退出游戏"
+
+[node name="bgm1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_h61rw")
+volume_db = -7.495
+
+[node name="bgm2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_h61rw")
+volume_db = -7.496
+
+[node name="IllustratedHandbook" type="Button" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 354.0
+offset_right = 261.0
+offset_bottom = 445.0
+theme_override_font_sizes/font_size = 60
+text = "怪物图鉴"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 451.0
+offset_top = 595.0
+offset_right = 1141.0
+offset_bottom = 637.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "素材来自网络，如果侵犯了您的权益，请联系我删除"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 224.0
+offset_right = 1147.0
+offset_bottom = 279.0
+rotation = -0.542442
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.982343, 0.982342, 0.982342, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "1.0"
+
+[connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="quitbutton" to="." method="_on_quitbutton_pressed"]
+[connection signal="pressed" from="IllustratedHandbook" to="." method="_on_illustrated_handbook_pressed"]

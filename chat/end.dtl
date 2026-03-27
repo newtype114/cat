@@ -1,0 +1,25 @@
+join j center
+j: 时间也差不多了
+j: 看来你们成功了
+leave j
+join xf left
+join kl right
+join kkl center
+kkl: 是的，人群已经引导到避难所了
+leave xf
+leave kl
+leave kkl
+join pklm center
+join k left
+pklm: 皇室那边也沟通好了
+leave pklm
+leave k
+join zb center
+zb: 兽人那边也没问题了哦~
+leave zb
+join j center
+j: 我这边调查也结束了，我已经掌握源头的信息了
+j: 接下来，就是解决源头了，各位
+[wait time="1.0"]
+j (j2): 我们上吧，各位，拯救兰德索尔
+[signal arg="end"]

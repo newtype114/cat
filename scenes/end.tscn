@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://d06fobrtqhx0x"]
+
+[ext_resource type="Script" uid="uid://ddg5gxft63v62" path="res://scripts/end.gd" id="1_3d26k"]
+[ext_resource type="AudioStream" uid="uid://xwmiaj771dpg" path="res://基米入侵/燃尽了.mp3" id="1_mwn6m"]
+[ext_resource type="Texture2D" uid="uid://dywp1ankba5c6" path="res://基米入侵/立绘/QQ图片20251003155547.png" id="3_p7m4f"]
+
+[node name="end" type="Node2D"]
+script = ExtResource("1_3d26k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_mwn6m")
+autoplay = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(670.269, 285.25)
+scale = Vector2(0.483713, 0.483713)
+texture = ExtResource("3_p7m4f")

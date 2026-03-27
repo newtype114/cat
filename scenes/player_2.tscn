@@ -1,0 +1,1968 @@
+[gd_scene load_steps=471 format=3 uid="uid://dpu6qclhe87wr"]
+
+[ext_resource type="Texture2D" uid="uid://ddb8umnn2k7mp" path="res://基米入侵/静流1/攻击/frame_00_delay-0.04s.png" id="1_8s82d"]
+[ext_resource type="Script" uid="uid://bb2lrfxanlrk8" path="res://scripts/player_2.gd" id="1_23wsk"]
+[ext_resource type="Texture2D" uid="uid://wqgdgvis6q0j" path="res://基米入侵/静流1/攻击/frame_01_delay-0.04s.png" id="2_23wsk"]
+[ext_resource type="PackedScene" uid="uid://caemr54fyd4el" path="res://scenes/light_sword.tscn" id="2_exmja"]
+[ext_resource type="Texture2D" uid="uid://cc1s14bs18hk7" path="res://基米入侵/静流1/攻击/frame_02_delay-0.04s.png" id="3_ixmx2"]
+[ext_resource type="Texture2D" uid="uid://dcm81qqs6tbt3" path="res://基米入侵/静流1/攻击/frame_03_delay-0.04s.png" id="4_r56w5"]
+[ext_resource type="Texture2D" uid="uid://ypjnjekhwj1f" path="res://基米入侵/静流1/攻击/frame_04_delay-0.04s.png" id="5_3d75w"]
+[ext_resource type="Texture2D" uid="uid://htrkimt3628t" path="res://基米入侵/静流1/攻击/frame_05_delay-0.04s.png" id="6_bt82c"]
+[ext_resource type="Texture2D" uid="uid://d1yt3lritms4w" path="res://基米入侵/静流1/攻击/frame_06_delay-0.04s.png" id="7_wo8it"]
+[ext_resource type="Texture2D" uid="uid://biuppij5bmsdi" path="res://基米入侵/静流1/攻击/frame_07_delay-0.04s.png" id="8_w7vly"]
+[ext_resource type="Texture2D" uid="uid://c04qoqumooy6v" path="res://基米入侵/静流1/攻击/frame_08_delay-0.04s.png" id="9_hosex"]
+[ext_resource type="Texture2D" uid="uid://bohygsg78ohx2" path="res://基米入侵/静流1/攻击/frame_09_delay-0.04s.png" id="10_yud5h"]
+[ext_resource type="Texture2D" uid="uid://do4ebehq08kwj" path="res://基米入侵/静流1/攻击/frame_10_delay-0.04s.png" id="11_mycd2"]
+[ext_resource type="Texture2D" uid="uid://bs78veqf3s4am" path="res://基米入侵/静流1/攻击/frame_11_delay-0.04s.png" id="12_ejjl1"]
+[ext_resource type="Texture2D" uid="uid://hhqq0bp2tliu" path="res://基米入侵/静流1/攻击/frame_12_delay-0.04s.png" id="13_prc6l"]
+[ext_resource type="Texture2D" uid="uid://ukyqerbalech" path="res://基米入侵/静流1/攻击/frame_13_delay-0.04s.png" id="14_qcnfl"]
+[ext_resource type="Texture2D" uid="uid://cwk1rplp5rv2c" path="res://基米入侵/静流1/攻击/frame_14_delay-0.04s.png" id="15_dw6i5"]
+[ext_resource type="Texture2D" uid="uid://deahr2nj30m6b" path="res://基米入侵/静流1/攻击/frame_15_delay-0.04s.png" id="16_lba2w"]
+[ext_resource type="Texture2D" uid="uid://dvp46cgj2c1gf" path="res://基米入侵/静流1/攻击/frame_16_delay-0.04s.png" id="17_r5otg"]
+[ext_resource type="Texture2D" uid="uid://cmlwejlqbsfnn" path="res://基米入侵/静流1/攻击/frame_17_delay-0.04s.png" id="18_ospxu"]
+[ext_resource type="Texture2D" uid="uid://dk14g6f0u6mp5" path="res://基米入侵/静流1/攻击/frame_18_delay-0.04s.png" id="19_mq634"]
+[ext_resource type="Texture2D" uid="uid://rwa3u7dfj5hd" path="res://基米入侵/静流1/攻击/frame_19_delay-0.04s.png" id="20_pvbin"]
+[ext_resource type="Texture2D" uid="uid://btxnaugipdydg" path="res://基米入侵/静流1/攻击/frame_20_delay-0.04s.png" id="21_ad1y5"]
+[ext_resource type="Texture2D" uid="uid://cqbcqm0hsmnt7" path="res://基米入侵/静流1/攻击/frame_21_delay-0.04s.png" id="22_wcva1"]
+[ext_resource type="Texture2D" uid="uid://c6gwx2f3kycm5" path="res://基米入侵/静流1/攻击/frame_22_delay-0.04s.png" id="23_4ncip"]
+[ext_resource type="Texture2D" uid="uid://b2f3kc2tfiluj" path="res://基米入侵/静流1/攻击/frame_23_delay-0.04s.png" id="24_a77gq"]
+[ext_resource type="Texture2D" uid="uid://8wak126bxki8" path="res://基米入侵/静流1/攻击/frame_24_delay-0.04s.png" id="25_x6eq4"]
+[ext_resource type="Texture2D" uid="uid://dw8nogrghhwu0" path="res://基米入侵/静流1/攻击/frame_25_delay-0.04s.png" id="26_uj8ae"]
+[ext_resource type="Texture2D" uid="uid://bec0iyjefmn8m" path="res://基米入侵/静流1/待机/frame_00_delay-0.04s.png" id="27_vk2os"]
+[ext_resource type="Texture2D" uid="uid://bmr32ke1tobx7" path="res://基米入侵/静流1/待机/frame_01_delay-0.04s.png" id="28_frae4"]
+[ext_resource type="Texture2D" uid="uid://c7hjhl3gcfahn" path="res://基米入侵/静流1/动画拆解/技能/frame_00_delay-0.04s.png" id="28_y2fcu"]
+[ext_resource type="Texture2D" uid="uid://yhvvmpp6c36l" path="res://基米入侵/静流1/待机/frame_02_delay-0.04s.png" id="29_8tkhu"]
+[ext_resource type="Texture2D" uid="uid://djy7ssbfaxa8y" path="res://基米入侵/静流1/动画拆解/技能/frame_01_delay-0.04s.png" id="29_a14u8"]
+[ext_resource type="Texture2D" uid="uid://drwapknu031lq" path="res://基米入侵/静流1/动画拆解/技能/frame_02_delay-0.04s.png" id="30_6bbmy"]
+[ext_resource type="Texture2D" uid="uid://bery58x5f1ef5" path="res://基米入侵/静流1/待机/frame_03_delay-0.04s.png" id="30_vvmrh"]
+[ext_resource type="Texture2D" uid="uid://dmcwarnvdti5w" path="res://基米入侵/静流1/待机/frame_04_delay-0.04s.png" id="31_ctdi1"]
+[ext_resource type="Texture2D" uid="uid://cxw2fej3fsn3j" path="res://基米入侵/静流1/动画拆解/技能/frame_03_delay-0.04s.png" id="31_itwnm"]
+[ext_resource type="Texture2D" uid="uid://wbmjdx365e0o" path="res://基米入侵/静流1/动画拆解/技能/frame_04_delay-0.04s.png" id="32_7ds0a"]
+[ext_resource type="Texture2D" uid="uid://eotxpp1rmryq" path="res://基米入侵/静流1/待机/frame_05_delay-0.04s.png" id="32_tm067"]
+[ext_resource type="Texture2D" uid="uid://dh68rrr23q2q5" path="res://基米入侵/静流1/动画拆解/技能/frame_05_delay-0.04s.png" id="33_a88xs"]
+[ext_resource type="Texture2D" uid="uid://cgftah6f5hcrx" path="res://基米入侵/静流1/待机/frame_06_delay-0.04s.png" id="33_yrqbe"]
+[ext_resource type="Texture2D" uid="uid://cnnm1fufnjdcc" path="res://基米入侵/静流1/动画拆解/技能/frame_06_delay-0.04s.png" id="34_2b7nc"]
+[ext_resource type="Texture2D" uid="uid://durkiaujv3dej" path="res://基米入侵/静流1/待机/frame_07_delay-0.04s.png" id="34_moo34"]
+[ext_resource type="Texture2D" uid="uid://iv8bdnx43qap" path="res://基米入侵/静流1/待机/frame_08_delay-0.04s.png" id="35_08slv"]
+[ext_resource type="Texture2D" uid="uid://bmhhfdb263a0k" path="res://基米入侵/静流1/动画拆解/技能/frame_07_delay-0.04s.png" id="35_cycpw"]
+[ext_resource type="Texture2D" uid="uid://ch151eiim7x3f" path="res://基米入侵/静流1/待机/frame_09_delay-0.04s.png" id="36_05mpk"]
+[ext_resource type="Texture2D" uid="uid://b0a3iuvwoweol" path="res://基米入侵/静流1/动画拆解/技能/frame_08_delay-0.04s.png" id="36_kg5n5"]
+[ext_resource type="Texture2D" uid="uid://cq0mtegbbsv5r" path="res://基米入侵/静流1/动画拆解/技能/frame_09_delay-0.04s.png" id="37_0n04q"]
+[ext_resource type="Texture2D" uid="uid://d4ajoughlngwh" path="res://基米入侵/静流1/待机/frame_10_delay-0.04s.png" id="37_3s44m"]
+[ext_resource type="Texture2D" uid="uid://bdj4w15l5fwxa" path="res://基米入侵/静流1/动画拆解/技能/frame_10_delay-0.04s.png" id="38_1lc65"]
+[ext_resource type="Texture2D" uid="uid://c5smlxypdwnil" path="res://基米入侵/静流1/待机/frame_11_delay-0.04s.png" id="38_61dda"]
+[ext_resource type="Texture2D" uid="uid://f8o44nq8pwfm" path="res://基米入侵/静流1/待机/frame_12_delay-0.04s.png" id="39_46c84"]
+[ext_resource type="Texture2D" uid="uid://dfuof0t3u4u6" path="res://基米入侵/静流1/动画拆解/技能/frame_11_delay-0.04s.png" id="39_rfedo"]
+[ext_resource type="Texture2D" uid="uid://b8fh6drboudrn" path="res://基米入侵/静流1/待机/frame_13_delay-0.04s.png" id="40_n2s2s"]
+[ext_resource type="Texture2D" uid="uid://67okb2ovrcu0" path="res://基米入侵/静流1/动画拆解/技能/frame_12_delay-0.04s.png" id="40_v83wg"]
+[ext_resource type="Texture2D" uid="uid://bku1bpy2rkvro" path="res://基米入侵/静流1/动画拆解/技能/frame_13_delay-0.04s.png" id="41_h2exw"]
+[ext_resource type="Texture2D" uid="uid://c52upc5guckmq" path="res://基米入侵/静流1/待机/frame_14_delay-0.04s.png" id="41_uopp5"]
+[ext_resource type="Texture2D" uid="uid://thv4yttmnita" path="res://基米入侵/静流1/动画拆解/技能/frame_14_delay-0.04s.png" id="42_tui2o"]
+[ext_resource type="Texture2D" uid="uid://yhfh5scx2tp" path="res://基米入侵/静流1/待机/frame_15_delay-0.04s.png" id="42_xsdam"]
+[ext_resource type="Texture2D" uid="uid://beho2oe8vrrp3" path="res://基米入侵/静流1/待机/frame_16_delay-0.04s.png" id="43_4o4ne"]
+[ext_resource type="Texture2D" uid="uid://dyr8r6yctwx6f" path="res://基米入侵/静流1/动画拆解/技能/frame_15_delay-0.04s.png" id="43_nv67u"]
+[ext_resource type="Texture2D" uid="uid://djym8lpbbag03" path="res://基米入侵/静流1/动画拆解/技能/frame_16_delay-0.04s.png" id="44_60f2c"]
+[ext_resource type="Texture2D" uid="uid://dktbduk4mx4f7" path="res://基米入侵/静流1/待机/frame_17_delay-0.04s.png" id="44_tf7rf"]
+[ext_resource type="Texture2D" uid="uid://4d0c3nrdvn6q" path="res://基米入侵/静流1/动画拆解/技能/frame_17_delay-0.04s.png" id="45_fm1jp"]
+[ext_resource type="Texture2D" uid="uid://c5twp8x3kukwy" path="res://基米入侵/静流1/待机/frame_18_delay-0.04s.png" id="45_mk560"]
+[ext_resource type="Texture2D" uid="uid://csyu5efragghq" path="res://基米入侵/静流1/待机/frame_19_delay-0.04s.png" id="46_ljqoe"]
+[ext_resource type="Texture2D" uid="uid://ndvm3s8wikgb" path="res://基米入侵/静流1/动画拆解/技能/frame_18_delay-0.04s.png" id="46_x2ima"]
+[ext_resource type="Texture2D" uid="uid://c4q3cw7lrr5uk" path="res://基米入侵/静流1/动画拆解/技能/frame_19_delay-0.04s.png" id="47_hko2f"]
+[ext_resource type="Texture2D" uid="uid://vfpk2h1ya45v" path="res://基米入侵/静流1/待机/frame_20_delay-0.04s.png" id="47_lsxi5"]
+[ext_resource type="Texture2D" uid="uid://cq6hrogeysi16" path="res://基米入侵/静流1/待机/frame_21_delay-0.04s.png" id="48_ci0vg"]
+[ext_resource type="Texture2D" uid="uid://ey8v6qyq1bef" path="res://基米入侵/静流1/动画拆解/技能/frame_20_delay-0.04s.png" id="48_haibi"]
+[ext_resource type="Texture2D" uid="uid://bed6m0cq1fb1o" path="res://基米入侵/静流1/待机/frame_22_delay-0.04s.png" id="49_d28j6"]
+[ext_resource type="Texture2D" uid="uid://d2c6ib05r4l22" path="res://基米入侵/静流1/动画拆解/技能/frame_21_delay-0.04s.png" id="49_te2gy"]
+[ext_resource type="Texture2D" uid="uid://bpj4772j3wwvn" path="res://基米入侵/静流1/待机/frame_23_delay-0.04s.png" id="50_fwtge"]
+[ext_resource type="Texture2D" uid="uid://bm7sbtrs1cso3" path="res://基米入侵/静流1/动画拆解/技能/frame_22_delay-0.04s.png" id="50_vngp3"]
+[ext_resource type="Texture2D" uid="uid://d00mtmqwxrxqp" path="res://基米入侵/静流1/待机/frame_24_delay-0.04s.png" id="51_l2yq8"]
+[ext_resource type="Texture2D" uid="uid://b8kvyklxwifjw" path="res://基米入侵/静流1/动画拆解/技能/frame_23_delay-0.04s.png" id="51_luyv6"]
+[ext_resource type="Texture2D" uid="uid://byirsu4eb6xa7" path="res://基米入侵/静流1/动画拆解/技能/frame_24_delay-0.04s.png" id="52_xl4eh"]
+[ext_resource type="Texture2D" uid="uid://ceg1eob8brbm6" path="res://基米入侵/静流1/待机/frame_25_delay-0.04s.png" id="52_xple8"]
+[ext_resource type="Texture2D" uid="uid://cr1omishnuy8i" path="res://基米入侵/静流1/动画拆解/技能/frame_25_delay-0.04s.png" id="53_6t5s0"]
+[ext_resource type="Texture2D" uid="uid://5eajk3ax2f81" path="res://基米入侵/静流1/待机/frame_26_delay-0.04s.png" id="53_ov5xq"]
+[ext_resource type="Texture2D" uid="uid://dlk43dtjkeer3" path="res://基米入侵/静流1/动画拆解/技能/frame_26_delay-0.04s.png" id="54_0fpge"]
+[ext_resource type="Texture2D" uid="uid://c6r58p4eyoqc4" path="res://基米入侵/静流1/待机/frame_27_delay-0.04s.png" id="54_m2qvu"]
+[ext_resource type="Texture2D" uid="uid://cjog0cgtp4bd8" path="res://基米入侵/静流1/待机/frame_28_delay-0.04s.png" id="55_kyjaq"]
+[ext_resource type="Texture2D" uid="uid://b7i4wpubxhv53" path="res://基米入侵/静流1/动画拆解/技能/frame_27_delay-0.04s.png" id="55_yt45f"]
+[ext_resource type="Texture2D" uid="uid://dgxjfb3n8ra6v" path="res://基米入侵/静流1/待机/frame_29_delay-0.04s.png" id="56_fiwvg"]
+[ext_resource type="Texture2D" uid="uid://bmg72e746wita" path="res://基米入侵/静流1/动画拆解/技能/frame_28_delay-0.04s.png" id="56_w1fug"]
+[ext_resource type="Texture2D" uid="uid://cesro0sr11b64" path="res://基米入侵/静流1/待机/frame_30_delay-0.04s.png" id="57_4q3ye"]
+[ext_resource type="Texture2D" uid="uid://csc88tmdk2667" path="res://基米入侵/静流1/动画拆解/技能/frame_29_delay-0.04s.png" id="57_bxrwd"]
+[ext_resource type="Texture2D" uid="uid://csp0sfrrxgiay" path="res://基米入侵/静流1/跑/frame_00_delay-0.04s.png" id="58_jscyi"]
+[ext_resource type="Texture2D" uid="uid://bau285ixeqii2" path="res://基米入侵/静流1/动画拆解/技能/frame_30_delay-0.04s.png" id="58_uvt8q"]
+[ext_resource type="Texture2D" uid="uid://cgjs4t5v3b555" path="res://基米入侵/静流1/跑/frame_01_delay-0.04s.png" id="59_cxr13"]
+[ext_resource type="Texture2D" uid="uid://gkm2tg6svcwv" path="res://基米入侵/静流1/动画拆解/技能/frame_31_delay-0.04s.png" id="59_kubm8"]
+[ext_resource type="Texture2D" uid="uid://be28lc5242mha" path="res://基米入侵/静流1/动画拆解/技能/frame_32_delay-0.04s.png" id="60_nhkfu"]
+[ext_resource type="Texture2D" uid="uid://nit7gbgn7p5j" path="res://基米入侵/静流1/跑/frame_02_delay-0.04s.png" id="60_tqc2k"]
+[ext_resource type="Texture2D" uid="uid://bkgr81bb14gcq" path="res://基米入侵/静流1/动画拆解/技能/frame_33_delay-0.04s.png" id="61_ec0ii"]
+[ext_resource type="Texture2D" uid="uid://bykfp3vwcdpgp" path="res://基米入侵/静流1/跑/frame_03_delay-0.04s.png" id="61_mct1f"]
+[ext_resource type="Texture2D" uid="uid://c4xmuhm0owwqp" path="res://基米入侵/静流1/跑/frame_04_delay-0.04s.png" id="62_wcf10"]
+[ext_resource type="Texture2D" uid="uid://dwlnvjt3oqxq3" path="res://基米入侵/静流1/动画拆解/技能/frame_34_delay-0.04s.png" id="62_yk4ln"]
+[ext_resource type="Texture2D" uid="uid://ce880cj0jpxwp" path="res://基米入侵/静流1/动画拆解/技能/frame_35_delay-0.04s.png" id="63_pexga"]
+[ext_resource type="Texture2D" uid="uid://0l86kl6emnbs" path="res://基米入侵/静流1/跑/frame_05_delay-0.04s.png" id="63_vf16i"]
+[ext_resource type="Texture2D" uid="uid://bpjk4ced0nv63" path="res://基米入侵/静流1/跑/frame_06_delay-0.04s.png" id="64_b55y2"]
+[ext_resource type="Texture2D" uid="uid://crqfvom1fghf8" path="res://基米入侵/静流1/动画拆解/技能/frame_36_delay-0.04s.png" id="64_kypna"]
+[ext_resource type="Texture2D" uid="uid://fu11fpw8yx73" path="res://基米入侵/静流1/跑/frame_07_delay-0.04s.png" id="65_5ljgk"]
+[ext_resource type="Texture2D" uid="uid://d4godwow2l2sl" path="res://基米入侵/静流1/动画拆解/技能/frame_37_delay-0.04s.png" id="65_ri7w4"]
+[ext_resource type="Texture2D" uid="uid://bv4ds3qdhrli6" path="res://基米入侵/静流1/动画拆解/技能/frame_38_delay-0.04s.png" id="66_4n1fd"]
+[ext_resource type="Texture2D" uid="uid://dcoy2gbkip3ls" path="res://基米入侵/静流1/跑/frame_08_delay-0.04s.png" id="66_gw2fe"]
+[ext_resource type="Texture2D" uid="uid://dlun3a256i28n" path="res://基米入侵/静流1/动画拆解/技能/frame_39_delay-0.04s.png" id="67_a8ulo"]
+[ext_resource type="Texture2D" uid="uid://ck82u554w4ixk" path="res://基米入侵/静流1/跑/frame_09_delay-0.04s.png" id="67_ai8c1"]
+[ext_resource type="Texture2D" uid="uid://i3k40ycwtdrq" path="res://基米入侵/静流1/动画拆解/技能/frame_40_delay-0.04s.png" id="68_gy5q7"]
+[ext_resource type="Texture2D" uid="uid://c6sh7u8vx5k3p" path="res://基米入侵/静流1/跑/frame_10_delay-0.04s.png" id="68_oodeg"]
+[ext_resource type="Texture2D" uid="uid://cjorx56sv0nnd" path="res://基米入侵/静流1/动画拆解/技能/frame_41_delay-0.04s.png" id="69_blku5"]
+[ext_resource type="Texture2D" uid="uid://8yiwyfegqopo" path="res://基米入侵/静流1/跑/frame_11_delay-0.04s.png" id="69_vprn8"]
+[ext_resource type="Texture2D" uid="uid://p0y6nl70my73" path="res://基米入侵/静流1/跑/frame_12_delay-0.04s.png" id="70_heo5l"]
+[ext_resource type="Texture2D" uid="uid://bsa88erddkm84" path="res://基米入侵/静流1/动画拆解/技能/frame_42_delay-0.04s.png" id="70_usgdk"]
+[ext_resource type="Texture2D" uid="uid://c6dlmh8d13gam" path="res://基米入侵/静流1/动画拆解/技能/frame_43_delay-0.04s.png" id="71_k60j5"]
+[ext_resource type="Texture2D" uid="uid://bhdmeoelsp7io" path="res://基米入侵/静流1/跑/frame_13_delay-0.04s.png" id="71_qf3fr"]
+[ext_resource type="Texture2D" uid="uid://cejhkygjkvojc" path="res://基米入侵/静流1/动画拆解/技能/frame_44_delay-0.04s.png" id="72_skppw"]
+[ext_resource type="Texture2D" uid="uid://cboj06qccwlqu" path="res://基米入侵/静流1/动画拆解/技能/frame_45_delay-0.04s.png" id="73_kikpv"]
+[ext_resource type="Texture2D" uid="uid://c0bura0b4i4hk" path="res://基米入侵/静流1/动画拆解/技能/frame_46_delay-0.04s.png" id="74_hno5l"]
+[ext_resource type="Texture2D" uid="uid://bj1mr3fnlevyt" path="res://基米入侵/静流1/动画拆解/死亡/frame_00_delay-0.04s.png" id="75_ltwqb"]
+[ext_resource type="Texture2D" uid="uid://c21g6buqcguu0" path="res://基米入侵/静流1/动画拆解/技能0/frame_000_delay-0.04s.png" id="75_wq81f"]
+[ext_resource type="Texture2D" uid="uid://tk5roodbfbau" path="res://基米入侵/静流1/动画拆解/技能0/frame_001_delay-0.04s.png" id="76_hg7wx"]
+[ext_resource type="Texture2D" uid="uid://b4lpbjkfdd5od" path="res://基米入侵/静流1/动画拆解/死亡/frame_01_delay-0.04s.png" id="76_qqx1c"]
+[ext_resource type="Texture2D" uid="uid://dxko1owljekaa" path="res://基米入侵/静流1/动画拆解/死亡/frame_02_delay-0.04s.png" id="77_g6cdr"]
+[ext_resource type="Texture2D" uid="uid://dbp0skgua2gcm" path="res://基米入侵/静流1/动画拆解/技能0/frame_002_delay-0.04s.png" id="77_sp6fv"]
+[ext_resource type="Texture2D" uid="uid://5orq4ya4clil" path="res://基米入侵/静流1/动画拆解/死亡/frame_03_delay-0.04s.png" id="78_32jmf"]
+[ext_resource type="Texture2D" uid="uid://bpc13v2a040el" path="res://基米入侵/静流1/动画拆解/技能0/frame_003_delay-0.04s.png" id="78_thc6x"]
+[ext_resource type="Texture2D" uid="uid://dt4p0chigff3n" path="res://基米入侵/静流1/动画拆解/死亡/frame_04_delay-0.04s.png" id="79_ajotf"]
+[ext_resource type="Texture2D" uid="uid://c8kvqfbnjkwjn" path="res://基米入侵/静流1/动画拆解/技能0/frame_004_delay-0.04s.png" id="79_ckybi"]
+[ext_resource type="Texture2D" uid="uid://d4iaktgw8ohld" path="res://基米入侵/静流1/动画拆解/死亡/frame_05_delay-0.04s.png" id="80_5gq2k"]
+[ext_resource type="Texture2D" uid="uid://dath12f37t22p" path="res://基米入侵/静流1/动画拆解/技能0/frame_005_delay-0.04s.png" id="80_ucpba"]
+[ext_resource type="Texture2D" uid="uid://cnc07tg10smrt" path="res://基米入侵/静流1/动画拆解/技能0/frame_006_delay-0.04s.png" id="81_exmja"]
+[ext_resource type="Texture2D" uid="uid://x2dme7682c8l" path="res://基米入侵/静流1/动画拆解/死亡/frame_06_delay-0.04s.png" id="81_n5ngt"]
+[ext_resource type="Texture2D" uid="uid://sbqmddrg1frc" path="res://基米入侵/静流1/动画拆解/死亡/frame_07_delay-0.04s.png" id="82_1t51n"]
+[ext_resource type="Texture2D" uid="uid://c77jv4i6ut5gf" path="res://基米入侵/静流1/动画拆解/技能0/frame_007_delay-0.04s.png" id="82_hl0s7"]
+[ext_resource type="Texture2D" uid="uid://dspquac1iryuv" path="res://基米入侵/静流1/动画拆解/技能0/frame_008_delay-0.04s.png" id="83_806bl"]
+[ext_resource type="Texture2D" uid="uid://43yvj0x2v3dd" path="res://基米入侵/静流1/动画拆解/死亡/frame_08_delay-0.04s.png" id="83_i7xlg"]
+[ext_resource type="Texture2D" uid="uid://bjyv7flhglho1" path="res://基米入侵/静流1/动画拆解/技能0/frame_009_delay-0.04s.png" id="84_0ycrj"]
+[ext_resource type="Texture2D" uid="uid://dbkbah03hi1p1" path="res://基米入侵/静流1/动画拆解/死亡/frame_09_delay-0.04s.png" id="84_06adp"]
+[ext_resource type="Texture2D" uid="uid://c42u32ubnc48u" path="res://基米入侵/静流1/动画拆解/死亡/frame_10_delay-0.04s.png" id="85_0oekl"]
+[ext_resource type="Texture2D" uid="uid://c6rd88quujm3d" path="res://基米入侵/静流1/动画拆解/技能0/frame_010_delay-0.04s.png" id="85_gnqyo"]
+[ext_resource type="Texture2D" uid="uid://dnmalbu4jwaue" path="res://基米入侵/静流1/动画拆解/技能0/frame_011_delay-0.04s.png" id="86_kafrl"]
+[ext_resource type="Texture2D" uid="uid://dkbsk7264ce72" path="res://基米入侵/静流1/动画拆解/死亡/frame_11_delay-0.04s.png" id="86_pbhif"]
+[ext_resource type="Texture2D" uid="uid://bwt73oqpck2q" path="res://基米入侵/静流1/动画拆解/技能0/frame_012_delay-0.04s.png" id="87_356op"]
+[ext_resource type="Texture2D" uid="uid://dr5t7ry8s2ktl" path="res://基米入侵/静流1/动画拆解/死亡/frame_12_delay-0.04s.png" id="87_pk437"]
+[ext_resource type="Texture2D" uid="uid://nibi4es7lgxv" path="res://基米入侵/静流1/动画拆解/技能0/frame_013_delay-0.04s.png" id="88_h51nq"]
+[ext_resource type="Texture2D" uid="uid://cj8es5jqy8ajq" path="res://基米入侵/静流1/动画拆解/死亡/frame_13_delay-0.04s.png" id="88_qb4wk"]
+[ext_resource type="Texture2D" uid="uid://dtosfdtx765fw" path="res://基米入侵/静流1/动画拆解/死亡/frame_14_delay-0.04s.png" id="89_3tdlv"]
+[ext_resource type="Texture2D" uid="uid://bafbvk8fisek1" path="res://基米入侵/静流1/动画拆解/技能0/frame_014_delay-0.04s.png" id="89_8jq4i"]
+[ext_resource type="Texture2D" uid="uid://djhnqufo368n2" path="res://基米入侵/静流1/动画拆解/技能0/frame_015_delay-0.04s.png" id="90_4ulhe"]
+[ext_resource type="Texture2D" uid="uid://dkk6epxpojwxm" path="res://基米入侵/静流1/动画拆解/死亡/frame_15_delay-0.04s.png" id="90_tucjr"]
+[ext_resource type="Texture2D" uid="uid://cysxtqooqpw6p" path="res://基米入侵/静流1/动画拆解/技能0/frame_016_delay-0.04s.png" id="91_h4wli"]
+[ext_resource type="Texture2D" uid="uid://cxw8uqatjkkkd" path="res://基米入侵/静流1/动画拆解/死亡/frame_16_delay-0.04s.png" id="91_xg7m4"]
+[ext_resource type="Texture2D" uid="uid://b6h2cmov41wrt" path="res://基米入侵/静流1/动画拆解/技能0/frame_017_delay-0.04s.png" id="92_ci3jm"]
+[ext_resource type="Texture2D" uid="uid://bwvjq8rsewquk" path="res://基米入侵/静流1/动画拆解/死亡/frame_17_delay-0.04s.png" id="92_xk103"]
+[ext_resource type="Texture2D" uid="uid://b8yuqy2n7lapy" path="res://基米入侵/静流1/动画拆解/死亡/frame_18_delay-0.04s.png" id="93_25vhc"]
+[ext_resource type="Texture2D" uid="uid://bjtnh43sru4ta" path="res://基米入侵/静流1/动画拆解/技能0/frame_018_delay-0.04s.png" id="93_tsfmw"]
+[ext_resource type="Texture2D" uid="uid://vqg1g84rjian" path="res://基米入侵/静流1/动画拆解/死亡/frame_19_delay-0.04s.png" id="94_h7hnc"]
+[ext_resource type="Texture2D" uid="uid://fk7c1nv6a85l" path="res://基米入侵/静流1/动画拆解/技能0/frame_019_delay-0.04s.png" id="94_n3i08"]
+[ext_resource type="Texture2D" uid="uid://c42pl2dru7ed4" path="res://基米入侵/静流1/动画拆解/死亡/frame_20_delay-0.04s.png" id="95_7srww"]
+[ext_resource type="Texture2D" uid="uid://btkciobpx3ce7" path="res://基米入侵/静流1/动画拆解/技能0/frame_020_delay-0.04s.png" id="95_pvv7i"]
+[ext_resource type="Texture2D" uid="uid://g4swea3u8acf" path="res://基米入侵/静流1/动画拆解/死亡/frame_21_delay-0.04s.png" id="96_upuo2"]
+[ext_resource type="Texture2D" uid="uid://bap3vfo87r4fh" path="res://基米入侵/静流1/动画拆解/技能0/frame_021_delay-0.04s.png" id="96_v5bqc"]
+[ext_resource type="Texture2D" uid="uid://2tt5cynb5dn" path="res://基米入侵/静流1/动画拆解/技能0/frame_022_delay-0.04s.png" id="97_0pmpl"]
+[ext_resource type="Texture2D" uid="uid://bxya666wmjdg2" path="res://基米入侵/静流1/动画拆解/死亡/frame_22_delay-0.04s.png" id="97_nf6ra"]
+[ext_resource type="Texture2D" uid="uid://7fw78jnk5det" path="res://基米入侵/静流1/动画拆解/技能0/frame_023_delay-0.04s.png" id="98_hdjcc"]
+[ext_resource type="Texture2D" uid="uid://bm1uxaqhbuq33" path="res://基米入侵/静流1/动画拆解/死亡/frame_23_delay-0.04s.png" id="98_uiwvo"]
+[ext_resource type="Texture2D" uid="uid://b21syoberddhb" path="res://基米入侵/静流1/动画拆解/死亡/frame_24_delay-0.04s.png" id="99_05r3w"]
+[ext_resource type="Texture2D" uid="uid://cf2txdkhvq535" path="res://基米入侵/静流1/动画拆解/技能0/frame_024_delay-0.04s.png" id="99_ipor6"]
+[ext_resource type="Texture2D" uid="uid://cb3wx55fclwtg" path="res://基米入侵/静流1/动画拆解/技能0/frame_025_delay-0.04s.png" id="100_d05jv"]
+[ext_resource type="Texture2D" uid="uid://b5hn4ha54d3ml" path="res://基米入侵/静流1/动画拆解/死亡/frame_25_delay-0.04s.png" id="100_pogw6"]
+[ext_resource type="Texture2D" uid="uid://cd3mdrp54kaog" path="res://基米入侵/静流1/动画拆解/技能0/frame_026_delay-0.04s.png" id="101_2mj7f"]
+[ext_resource type="Texture2D" uid="uid://jorq4e7ikp7m" path="res://基米入侵/静流1/动画拆解/死亡/frame_26_delay-0.04s.png" id="101_63k7l"]
+[ext_resource type="Texture2D" uid="uid://bb7c71xcakqk0" path="res://基米入侵/静流1/动画拆解/技能0/frame_027_delay-0.04s.png" id="102_g3xuu"]
+[ext_resource type="Texture2D" uid="uid://cp71o0enmhto2" path="res://基米入侵/静流1/动画拆解/死亡/frame_27_delay-0.04s.png" id="102_mcbir"]
+[ext_resource type="Texture2D" uid="uid://bo2p17v1yepys" path="res://基米入侵/静流1/动画拆解/技能0/frame_028_delay-0.04s.png" id="103_b7gvr"]
+[ext_resource type="Texture2D" uid="uid://b2sj7832ty3w1" path="res://基米入侵/静流1/动画拆解/死亡/frame_28_delay-0.04s.png" id="103_xtmpl"]
+[ext_resource type="Texture2D" uid="uid://dd4rsspfrf7i8" path="res://基米入侵/静流1/动画拆解/死亡/frame_29_delay-0.04s.png" id="104_m5dy3"]
+[ext_resource type="Texture2D" uid="uid://d37gj6uhsmsf0" path="res://基米入侵/静流1/动画拆解/技能0/frame_029_delay-0.04s.png" id="104_ruylm"]
+[ext_resource type="Texture2D" uid="uid://cvcq3pg1pt7um" path="res://基米入侵/静流1/动画拆解/技能0/frame_030_delay-0.04s.png" id="105_8gaed"]
+[ext_resource type="Texture2D" uid="uid://id4rdxsaqx53" path="res://基米入侵/静流1/动画拆解/死亡/frame_30_delay-0.04s.png" id="105_wo5oq"]
+[ext_resource type="Texture2D" uid="uid://clia23uxl7vbd" path="res://基米入侵/静流1/动画拆解/死亡/frame_31_delay-0.04s.png" id="106_4ayqs"]
+[ext_resource type="Texture2D" uid="uid://3qw56vxlcrbc" path="res://基米入侵/静流1/动画拆解/技能0/frame_031_delay-0.04s.png" id="106_kmgcj"]
+[ext_resource type="Texture2D" uid="uid://740mi1s3olxm" path="res://基米入侵/静流1/动画拆解/技能0/frame_032_delay-0.04s.png" id="107_eo45e"]
+[ext_resource type="Texture2D" uid="uid://cjh7qsa4lhbda" path="res://基米入侵/静流1/动画拆解/死亡/frame_32_delay-0.04s.png" id="107_f8cjm"]
+[ext_resource type="Texture2D" uid="uid://bcht1lw2swidu" path="res://基米入侵/静流1/动画拆解/受伤/frame_00_delay-0.04s.png" id="108_fxlye"]
+[ext_resource type="Texture2D" uid="uid://cnf7t33f23l7k" path="res://基米入侵/静流1/动画拆解/技能0/frame_033_delay-0.04s.png" id="108_h3r3a"]
+[ext_resource type="Texture2D" uid="uid://c0f6q1gdlhxym" path="res://基米入侵/静流1/动画拆解/受伤/frame_01_delay-0.04s.png" id="109_37tg0"]
+[ext_resource type="Texture2D" uid="uid://c1ym73mmg8cn7" path="res://基米入侵/静流1/动画拆解/技能0/frame_034_delay-0.04s.png" id="109_s3rvr"]
+[ext_resource type="Texture2D" uid="uid://yvvw4xr3nyqk" path="res://基米入侵/静流1/动画拆解/技能0/frame_035_delay-0.04s.png" id="110_iujvw"]
+[ext_resource type="Texture2D" uid="uid://nxv567gq1fwq" path="res://基米入侵/静流1/动画拆解/受伤/frame_02_delay-0.04s.png" id="110_mlkyt"]
+[ext_resource type="Texture2D" uid="uid://b3if7jhor5ok0" path="res://基米入侵/静流1/动画拆解/技能0/frame_036_delay-0.04s.png" id="111_20u0a"]
+[ext_resource type="Texture2D" uid="uid://ds41wb1mmcxvg" path="res://基米入侵/静流1/动画拆解/受伤/frame_03_delay-0.04s.png" id="111_35bcf"]
+[ext_resource type="Texture2D" uid="uid://b4n6kkuu1rqwm" path="res://基米入侵/静流1/动画拆解/技能0/frame_037_delay-0.04s.png" id="112_odd3b"]
+[ext_resource type="Texture2D" uid="uid://0g3mi8hlssym" path="res://基米入侵/静流1/动画拆解/受伤/frame_04_delay-0.04s.png" id="112_uuw8s"]
+[ext_resource type="Texture2D" uid="uid://djefn3io2tho4" path="res://基米入侵/静流1/动画拆解/技能0/frame_038_delay-0.04s.png" id="113_fs6rs"]
+[ext_resource type="Texture2D" uid="uid://bfylkpwi7layx" path="res://基米入侵/静流1/动画拆解/受伤/frame_05_delay-0.04s.png" id="113_k67b2"]
+[ext_resource type="Texture2D" uid="uid://c6mgtoo283jde" path="res://基米入侵/静流1/动画拆解/技能0/frame_039_delay-0.04s.png" id="114_pb8en"]
+[ext_resource type="Texture2D" uid="uid://dlmrmtvhvkx6" path="res://基米入侵/静流1/动画拆解/受伤/frame_06_delay-0.04s.png" id="114_xtf0d"]
+[ext_resource type="Texture2D" uid="uid://ds6i34hm8lqyt" path="res://基米入侵/静流1/动画拆解/受伤/frame_07_delay-0.04s.png" id="115_43xrx"]
+[ext_resource type="Texture2D" uid="uid://d0ffo3k3j5jrx" path="res://基米入侵/静流1/动画拆解/技能0/frame_040_delay-0.04s.png" id="115_nmq2h"]
+[ext_resource type="Texture2D" uid="uid://bnlopi1oj1i63" path="res://基米入侵/静流1/动画拆解/受伤/frame_08_delay-0.04s.png" id="116_1e7wk"]
+[ext_resource type="Texture2D" uid="uid://dkrj1p5ob6j7f" path="res://基米入侵/静流1/动画拆解/技能0/frame_041_delay-0.04s.png" id="116_puic3"]
+[ext_resource type="Texture2D" uid="uid://beokusqus75nt" path="res://基米入侵/静流1/动画拆解/技能0/frame_042_delay-0.04s.png" id="117_cu13q"]
+[ext_resource type="Texture2D" uid="uid://cllfxpqhkhr4" path="res://基米入侵/静流1/动画拆解/受伤/frame_09_delay-0.04s.png" id="117_qgbva"]
+[ext_resource type="Texture2D" uid="uid://c31ntbfwtf73p" path="res://基米入侵/静流1/动画拆解/受伤/frame_10_delay-0.04s.png" id="118_7ruq1"]
+[ext_resource type="Texture2D" uid="uid://7tagad040405" path="res://基米入侵/静流1/动画拆解/技能0/frame_043_delay-0.04s.png" id="118_vo523"]
+[ext_resource type="Texture2D" uid="uid://rr2dvbauv74" path="res://基米入侵/静流1/动画拆解/技能0/frame_044_delay-0.04s.png" id="119_ydhxg"]
+[ext_resource type="Texture2D" uid="uid://dh1upbdhou2kw" path="res://基米入侵/静流1/动画拆解/技能0/frame_045_delay-0.04s.png" id="120_8ps50"]
+[ext_resource type="Texture2D" uid="uid://dxv2f5n8uraau" path="res://基米入侵/静流1/动画拆解/技能0/frame_046_delay-0.04s.png" id="121_4u5g7"]
+[ext_resource type="Texture2D" uid="uid://bqm3ijww7u5l5" path="res://基米入侵/静流1/动画拆解/技能0/frame_047_delay-0.04s.png" id="122_82owu"]
+[ext_resource type="Texture2D" uid="uid://bnpomy5kaxa0i" path="res://基米入侵/静流1/动画拆解/技能0/frame_048_delay-0.04s.png" id="123_sgd6h"]
+[ext_resource type="Texture2D" uid="uid://bswxjq0x3sy1s" path="res://基米入侵/静流1/动画拆解/技能0/frame_049_delay-0.04s.png" id="124_6ljub"]
+[ext_resource type="Texture2D" uid="uid://cxkfxhuc4pkud" path="res://基米入侵/静流1/动画拆解/技能0/frame_050_delay-0.04s.png" id="125_gysfr"]
+[ext_resource type="Texture2D" uid="uid://dh2r6oql74cj1" path="res://基米入侵/静流1/动画拆解/技能0/frame_051_delay-0.04s.png" id="126_jqhff"]
+[ext_resource type="Texture2D" uid="uid://btuvl4ws2k6ew" path="res://基米入侵/静流1/动画拆解/技能0/frame_052_delay-0.04s.png" id="127_176l2"]
+[ext_resource type="Texture2D" uid="uid://du2ugcfryorjp" path="res://基米入侵/静流1/动画拆解/技能0/frame_053_delay-0.04s.png" id="128_cjqfv"]
+[ext_resource type="Texture2D" uid="uid://lmik328vw62h" path="res://基米入侵/静流1/动画拆解/技能0/frame_054_delay-0.04s.png" id="129_ddsd6"]
+[ext_resource type="Texture2D" uid="uid://cvggrdsdhncyu" path="res://基米入侵/静流1/动画拆解/技能0/frame_055_delay-0.04s.png" id="130_447yp"]
+[ext_resource type="Texture2D" uid="uid://cdvdnupbqmn36" path="res://基米入侵/静流1/动画拆解/技能0/frame_056_delay-0.04s.png" id="131_d5rm6"]
+[ext_resource type="Texture2D" uid="uid://b0dx88qja0n5n" path="res://基米入侵/静流1/动画拆解/技能0/frame_057_delay-0.04s.png" id="132_62deh"]
+[ext_resource type="Texture2D" uid="uid://bkbp20veqw1jw" path="res://基米入侵/静流1/动画拆解/技能0/frame_058_delay-0.04s.png" id="133_5u71m"]
+[ext_resource type="Texture2D" uid="uid://blhgie1rm642m" path="res://基米入侵/静流1/动画拆解/技能0/frame_059_delay-0.04s.png" id="134_awyr5"]
+[ext_resource type="Texture2D" uid="uid://dmsokllqb0wr7" path="res://基米入侵/静流1/动画拆解/技能0/frame_060_delay-0.04s.png" id="135_ubv3v"]
+[ext_resource type="Texture2D" uid="uid://cqxa7ea41dlbk" path="res://基米入侵/静流1/动画拆解/技能0/frame_061_delay-0.04s.png" id="136_76sus"]
+[ext_resource type="Texture2D" uid="uid://d3tdg3kprfe88" path="res://基米入侵/静流1/动画拆解/技能0/frame_062_delay-0.04s.png" id="137_k1kxl"]
+[ext_resource type="Texture2D" uid="uid://3uff5ra1lcb5" path="res://基米入侵/静流1/动画拆解/技能0/frame_063_delay-0.04s.png" id="138_c8m8j"]
+[ext_resource type="Texture2D" uid="uid://dl08ibyd7p6nn" path="res://基米入侵/静流1/动画拆解/技能0/frame_064_delay-0.04s.png" id="139_32sei"]
+[ext_resource type="Texture2D" uid="uid://c1524of6q0uv8" path="res://基米入侵/静流1/动画拆解/技能0/frame_065_delay-0.04s.png" id="140_iqer4"]
+[ext_resource type="Texture2D" uid="uid://dki36xdxo45l1" path="res://基米入侵/静流1/动画拆解/技能0/frame_066_delay-0.04s.png" id="141_sg5tg"]
+[ext_resource type="Texture2D" uid="uid://1w61hp2bs5kr" path="res://基米入侵/静流1/动画拆解/技能0/frame_067_delay-0.04s.png" id="142_pfxnf"]
+[ext_resource type="Texture2D" uid="uid://b0lymc2pmdtkb" path="res://基米入侵/静流1/动画拆解/技能0/frame_068_delay-0.04s.png" id="143_cwqxh"]
+[ext_resource type="Texture2D" uid="uid://dt5bcmt0b1o15" path="res://基米入侵/静流1/动画拆解/技能0/frame_069_delay-0.04s.png" id="144_tsqsf"]
+[ext_resource type="Texture2D" uid="uid://dhs4by2ajxj2e" path="res://基米入侵/静流1/动画拆解/技能0/frame_070_delay-0.04s.png" id="145_swxkp"]
+[ext_resource type="Texture2D" uid="uid://cygs0eihrsdyh" path="res://基米入侵/静流1/动画拆解/技能0/frame_071_delay-0.04s.png" id="146_ijejg"]
+[ext_resource type="Texture2D" uid="uid://pkcaktsrg3ul" path="res://基米入侵/静流1/动画拆解/技能0/frame_072_delay-0.04s.png" id="147_05gqv"]
+[ext_resource type="Texture2D" uid="uid://datd8bcsfe086" path="res://基米入侵/静流1/动画拆解/技能0/frame_073_delay-0.04s.png" id="148_g3opp"]
+[ext_resource type="Texture2D" uid="uid://bgfhm5rugj3u3" path="res://基米入侵/静流1/动画拆解/技能0/frame_074_delay-0.04s.png" id="149_rreww"]
+[ext_resource type="Texture2D" uid="uid://dj0xmyiasm3cy" path="res://基米入侵/静流1/动画拆解/技能0/frame_075_delay-0.04s.png" id="150_4lvon"]
+[ext_resource type="Texture2D" uid="uid://c6ounrq1slbfm" path="res://基米入侵/静流1/动画拆解/技能0/frame_076_delay-0.04s.png" id="151_v0pkl"]
+[ext_resource type="Texture2D" uid="uid://dp4we4gvncjeb" path="res://基米入侵/静流1/动画拆解/技能0/frame_077_delay-0.04s.png" id="152_pfsr3"]
+[ext_resource type="Texture2D" uid="uid://xsyj3856n23f" path="res://基米入侵/静流1/动画拆解/技能0/frame_078_delay-0.04s.png" id="153_5byx5"]
+[ext_resource type="Texture2D" uid="uid://capqqcrukqhm5" path="res://基米入侵/静流1/动画拆解/技能0/frame_079_delay-0.04s.png" id="154_y8hwr"]
+[ext_resource type="Texture2D" uid="uid://cp3jdqvw7xh0q" path="res://基米入侵/静流1/动画拆解/技能0/frame_080_delay-0.04s.png" id="155_kfmni"]
+[ext_resource type="Texture2D" uid="uid://crualugoa7s8i" path="res://基米入侵/静流1/动画拆解/技能0/frame_081_delay-0.04s.png" id="156_v66oo"]
+[ext_resource type="Texture2D" uid="uid://c3olj7yul8e8" path="res://基米入侵/静流1/动画拆解/技能0/frame_082_delay-0.04s.png" id="157_i7f8r"]
+[ext_resource type="Texture2D" uid="uid://dmfsmalwy5rgd" path="res://基米入侵/静流1/动画拆解/技能0/frame_083_delay-0.04s.png" id="158_3h37w"]
+[ext_resource type="Texture2D" uid="uid://cvqbypii85yuk" path="res://基米入侵/静流1/动画拆解/技能0/frame_084_delay-0.04s.png" id="159_4on2v"]
+[ext_resource type="Texture2D" uid="uid://bwo47ofyutfv0" path="res://基米入侵/静流1/动画拆解/技能0/frame_085_delay-0.04s.png" id="160_4jgma"]
+[ext_resource type="Texture2D" uid="uid://cqqjgqv463d5e" path="res://基米入侵/静流1/动画拆解/技能0/frame_086_delay-0.04s.png" id="161_hcwmv"]
+[ext_resource type="Texture2D" uid="uid://cpbg2mqwsvs7f" path="res://基米入侵/静流1/动画拆解/技能0/frame_087_delay-0.04s.png" id="162_7gdsf"]
+[ext_resource type="Texture2D" uid="uid://cjdtys76tm2vl" path="res://基米入侵/静流1/动画拆解/技能0/frame_088_delay-0.04s.png" id="163_mxdno"]
+[ext_resource type="AudioStream" uid="uid://ckmjjhncx8e1y" path="res://基米入侵/静流1/音频/hited1.mp3" id="164_2b7nc"]
+[ext_resource type="Texture2D" uid="uid://dfovpipxswmed" path="res://基米入侵/静流1/动画拆解/技能0/frame_089_delay-0.04s.png" id="164_w8kxx"]
+[ext_resource type="AudioStream" uid="uid://bxutshymwl6ro" path="res://基米入侵/静流1/音频/hited2.mp3" id="165_cycpw"]
+[ext_resource type="Texture2D" uid="uid://cyikvm2mv54s2" path="res://基米入侵/静流1/动画拆解/技能0/frame_090_delay-0.04s.png" id="165_k538v"]
+[ext_resource type="AudioStream" uid="uid://dinn872iwb0bt" path="res://基米入侵/静流1/音频/hited3.mp3" id="166_kg5n5"]
+[ext_resource type="Texture2D" uid="uid://chn1c0i8t7ffe" path="res://基米入侵/静流1/动画拆解/技能0/frame_091_delay-0.04s.png" id="166_u8j6m"]
+[ext_resource type="AudioStream" uid="uid://bcvmmd6johohr" path="res://基米入侵/静流1/音频/death1.mp3" id="167_0n04q"]
+[ext_resource type="Texture2D" uid="uid://cuyikomgvdpoc" path="res://基米入侵/静流1/动画拆解/技能0/frame_092_delay-0.04s.png" id="167_a7a6m"]
+[ext_resource type="AudioStream" uid="uid://btvpt53wvmhcn" path="res://基米入侵/静流1/音频/death2.mp3" id="168_1lc65"]
+[ext_resource type="Texture2D" uid="uid://cxr6pfdpgofbn" path="res://基米入侵/静流1/动画拆解/技能0/frame_093_delay-0.04s.png" id="168_w1bga"]
+[ext_resource type="Texture2D" uid="uid://bsw57bwtyi6kx" path="res://基米入侵/静流1/动画拆解/技能0/frame_094_delay-0.04s.png" id="169_5742s"]
+[ext_resource type="AudioStream" uid="uid://b68ximhkoeg20" path="res://基米入侵/静流1/音频/death3.mp3" id="169_rfedo"]
+[ext_resource type="Texture2D" uid="uid://dmk4q3ve2l60h" path="res://基米入侵/静流1/动画拆解/技能0/frame_095_delay-0.04s.png" id="170_6673f"]
+[ext_resource type="AudioStream" uid="uid://bs8uh254onrw7" path="res://基米入侵/静流1/音频/技能1.mp3" id="170_cycpw"]
+[ext_resource type="Texture2D" uid="uid://b1guigi4ynpio" path="res://基米入侵/静流1/动画拆解/技能0/frame_096_delay-0.04s.png" id="171_nj06k"]
+[ext_resource type="Texture2D" uid="uid://dd6y25iw04hb6" path="res://基米入侵/静流1/动画拆解/技能0/frame_097_delay-0.04s.png" id="172_3v1q4"]
+[ext_resource type="Texture2D" uid="uid://dbvi6lil3oqr2" path="res://基米入侵/静流1/动画拆解/技能0/frame_098_delay-0.04s.png" id="173_1jgmv"]
+[ext_resource type="Texture2D" uid="uid://ddf6nlfh5ts0e" path="res://基米入侵/静流1/动画拆解/技能0/frame_099_delay-0.04s.png" id="174_s4mfh"]
+[ext_resource type="Texture2D" uid="uid://c01gulqbrrn24" path="res://基米入侵/静流1/技能4.gif/frame-001.png" id="176_6h77o"]
+[ext_resource type="Texture2D" uid="uid://d3sp7rcag1uc5" path="res://基米入侵/静流1/技能4.gif/frame-002.png" id="177_anoeg"]
+[ext_resource type="Texture2D" uid="uid://hvw7ujtou7mt" path="res://基米入侵/静流1/技能4.gif/frame-003.png" id="178_4mtch"]
+[ext_resource type="Texture2D" uid="uid://dacjjxa2aesd4" path="res://基米入侵/静流1/技能4.gif/frame-004.png" id="179_axtcc"]
+[ext_resource type="Texture2D" uid="uid://w0mcaljigj67" path="res://基米入侵/静流1/技能4.gif/frame-005.png" id="180_nl7od"]
+[ext_resource type="Texture2D" uid="uid://d01tmdajkm2j0" path="res://基米入侵/静流1/技能4.gif/frame-006.png" id="181_to3p6"]
+[ext_resource type="Texture2D" uid="uid://c4s2ecsr1e376" path="res://基米入侵/静流1/技能4.gif/frame-007.png" id="182_k1e8g"]
+[ext_resource type="Texture2D" uid="uid://dijpbibxm01ce" path="res://基米入侵/静流1/技能4.gif/frame-008.png" id="183_r46fp"]
+[ext_resource type="Texture2D" uid="uid://d2hkwary3glv3" path="res://基米入侵/静流1/技能4.gif/frame-009.png" id="184_pou3l"]
+[ext_resource type="Texture2D" uid="uid://h1nw7xj8kv1h" path="res://基米入侵/静流1/技能4.gif/frame-010.png" id="185_bogvx"]
+[ext_resource type="Texture2D" uid="uid://bxy4wvegmu85a" path="res://基米入侵/静流1/技能4.gif/frame-011.png" id="186_ea870"]
+[ext_resource type="Texture2D" uid="uid://yf7ayl0gcsw6" path="res://基米入侵/静流1/技能4.gif/frame-012.png" id="187_clqmw"]
+[ext_resource type="Texture2D" uid="uid://5sahurdcpqmy" path="res://基米入侵/静流1/技能4.gif/frame-013.png" id="188_bcl8a"]
+[ext_resource type="Texture2D" uid="uid://yifsnau7r44k" path="res://基米入侵/静流1/技能4.gif/frame-014.png" id="189_lidfc"]
+[ext_resource type="Texture2D" uid="uid://bro825jpk4q06" path="res://基米入侵/静流1/技能4.gif/frame-015.png" id="190_6ty20"]
+[ext_resource type="Texture2D" uid="uid://bop3y3x58s7g8" path="res://基米入侵/静流1/技能4.gif/frame-016.png" id="191_sa8wq"]
+[ext_resource type="Texture2D" uid="uid://ctcq8jll2g64u" path="res://基米入侵/静流1/技能4.gif/frame-017.png" id="192_jd30v"]
+[ext_resource type="Texture2D" uid="uid://dei1s3imwqdp0" path="res://基米入侵/静流1/技能4.gif/frame-018.png" id="193_nt1a5"]
+[ext_resource type="Texture2D" uid="uid://bi54ignqqx3w3" path="res://基米入侵/静流1/技能4.gif/frame-019.png" id="194_xl551"]
+[ext_resource type="Texture2D" uid="uid://bttdvtehv2den" path="res://基米入侵/静流1/技能4.gif/frame-020.png" id="195_pf786"]
+[ext_resource type="Texture2D" uid="uid://cqrq6acmk08kg" path="res://基米入侵/静流1/技能4.gif/frame-021.png" id="196_qyppa"]
+[ext_resource type="Texture2D" uid="uid://b3c0u3llcm3iw" path="res://基米入侵/静流1/技能4.gif/frame-022.png" id="197_0v7qx"]
+[ext_resource type="Texture2D" uid="uid://g7cas03644d5" path="res://基米入侵/静流1/技能4.gif/frame-023.png" id="198_43b0d"]
+[ext_resource type="Texture2D" uid="uid://bn4465ws2sdxd" path="res://基米入侵/静流1/技能4.gif/frame-024.png" id="199_aflmq"]
+[ext_resource type="Texture2D" uid="uid://c4vjs3psmhulu" path="res://基米入侵/静流1/技能4.gif/frame-025.png" id="200_4vu11"]
+[ext_resource type="Texture2D" uid="uid://be8eg3ld1tg8f" path="res://基米入侵/静流1/技能4.gif/frame-026.png" id="201_m1od2"]
+[ext_resource type="Texture2D" uid="uid://dogbm1xrhq1pu" path="res://基米入侵/静流1/技能4.gif/frame-027.png" id="202_6r1vx"]
+[ext_resource type="Texture2D" uid="uid://dked6w27x664" path="res://基米入侵/静流1/技能4.gif/frame-028.png" id="203_yci0a"]
+[ext_resource type="Texture2D" uid="uid://bffn0qfrrtgtl" path="res://基米入侵/静流1/技能4.gif/frame-029.png" id="204_7h2yj"]
+[ext_resource type="Texture2D" uid="uid://cuuwuyayspsrb" path="res://基米入侵/静流1/技能4.gif/frame-030.png" id="205_xg21e"]
+[ext_resource type="Texture2D" uid="uid://d364fx3rnmu0w" path="res://基米入侵/静流1/技能4.gif/frame-031.png" id="206_pjedd"]
+[ext_resource type="Texture2D" uid="uid://y2f8lu81op8x" path="res://基米入侵/静流1/技能4.gif/frame-032.png" id="207_jnw8t"]
+[ext_resource type="Texture2D" uid="uid://c5y45rw0hcflj" path="res://基米入侵/静流1/技能4.gif/frame-033.png" id="208_3vpno"]
+[ext_resource type="Texture2D" uid="uid://dm0jqskdiuki6" path="res://基米入侵/静流1/技能4.gif/frame-034.png" id="209_s6bgx"]
+[ext_resource type="Texture2D" uid="uid://b0hj232xn1a32" path="res://基米入侵/静流1/技能4.gif/frame-035.png" id="210_npljh"]
+[ext_resource type="Texture2D" uid="uid://bavygk1q5uvax" path="res://基米入侵/静流1/技能4.gif/frame-036.png" id="211_iqqii"]
+[ext_resource type="Texture2D" uid="uid://dudsb7l2mx0cx" path="res://基米入侵/静流1/技能4.gif/frame-037.png" id="212_ndh2b"]
+[ext_resource type="Texture2D" uid="uid://bjov5u6fbphk8" path="res://基米入侵/静流1/技能4.gif/frame-038.png" id="213_yw1vo"]
+[ext_resource type="Texture2D" uid="uid://npyvorng2k81" path="res://基米入侵/静流1/技能4.gif/frame-039.png" id="214_h6d8x"]
+[ext_resource type="Texture2D" uid="uid://hs45rr4liapn" path="res://基米入侵/静流1/技能4.gif/frame-040.png" id="215_88phd"]
+[ext_resource type="Texture2D" uid="uid://b1u55iuua3ibj" path="res://基米入侵/静流1/技能4.gif/frame-041.png" id="216_tgcjb"]
+[ext_resource type="Texture2D" uid="uid://curifomgk2nps" path="res://基米入侵/静流1/技能4.gif/frame-042.png" id="217_fofbd"]
+[ext_resource type="Texture2D" uid="uid://d0cc1j2kcx1x0" path="res://基米入侵/静流1/技能4.gif/frame-043.png" id="218_tw8sb"]
+[ext_resource type="Texture2D" uid="uid://cvgrcheqq41j3" path="res://基米入侵/静流1/技能4.gif/frame-044.png" id="219_bi6y1"]
+[ext_resource type="Texture2D" uid="uid://cuycg31xf2h5a" path="res://基米入侵/静流1/技能4.gif/frame-045.png" id="220_l8b2l"]
+[ext_resource type="Texture2D" uid="uid://cjdmpd02kktrj" path="res://基米入侵/静流1/技能4.gif/frame-046.png" id="221_mgeav"]
+[ext_resource type="Texture2D" uid="uid://c0jxnrlo1q7hn" path="res://基米入侵/静流1/技能4.gif/frame-047.png" id="222_vy85c"]
+[ext_resource type="Texture2D" uid="uid://wubueyf37kqp" path="res://基米入侵/静流1/技能4.gif/frame-048.png" id="223_kdpw0"]
+[ext_resource type="Texture2D" uid="uid://bgdu8ruqf1i23" path="res://基米入侵/静流1/技能4.gif/frame-049.png" id="224_nf634"]
+[ext_resource type="Texture2D" uid="uid://c5t4s7odn2m5o" path="res://基米入侵/静流1/技能4.gif/frame-050.png" id="225_yv48v"]
+[ext_resource type="Texture2D" uid="uid://dxgqhph7w06dt" path="res://基米入侵/静流1/技能4.gif/frame-051.png" id="226_ereqs"]
+[ext_resource type="Texture2D" uid="uid://bq2fqjev44ec5" path="res://基米入侵/静流1/技能4.gif/frame-052.png" id="227_ni4vo"]
+[ext_resource type="Texture2D" uid="uid://koyaxodcnuek" path="res://基米入侵/静流1/技能4.gif/frame-053.png" id="228_piyg1"]
+[ext_resource type="Texture2D" uid="uid://b30q2gic40h2u" path="res://基米入侵/静流1/技能4.gif/frame-054.png" id="229_1fxv8"]
+[ext_resource type="Texture2D" uid="uid://bi0wpgp0752ee" path="res://基米入侵/静流1/技能4.gif/frame-055.png" id="230_up8dn"]
+[ext_resource type="Texture2D" uid="uid://cr2bh74nnnq3f" path="res://基米入侵/静流1/技能4.gif/frame-056.png" id="231_panv0"]
+[ext_resource type="Texture2D" uid="uid://di8q6rc3nw4m6" path="res://基米入侵/静流1/技能4.gif/frame-057.png" id="232_oftdq"]
+[ext_resource type="Texture2D" uid="uid://dw1p5sr88v70p" path="res://基米入侵/静流1/技能4.gif/frame-058.png" id="233_koci4"]
+[ext_resource type="Texture2D" uid="uid://bd423vk67ltfn" path="res://基米入侵/静流1/技能4.gif/frame-059.png" id="234_sa200"]
+[ext_resource type="Texture2D" uid="uid://dhlkmh53307bb" path="res://基米入侵/静流1/技能4.gif/frame-060.png" id="235_82vui"]
+[ext_resource type="Texture2D" uid="uid://5okg0by54h4u" path="res://基米入侵/静流1/技能4.gif/frame-061.png" id="236_xw7sk"]
+[ext_resource type="Texture2D" uid="uid://dfbjvs87jymef" path="res://基米入侵/静流1/技能4.gif/frame-062.png" id="237_ls4lh"]
+[ext_resource type="Texture2D" uid="uid://bhi6v4xnfmrsa" path="res://基米入侵/静流1/技能4.gif/frame-063.png" id="238_637oj"]
+[ext_resource type="Texture2D" uid="uid://crebt7s84drr5" path="res://基米入侵/静流1/技能4.gif/frame-064.png" id="239_c8ecc"]
+[ext_resource type="Texture2D" uid="uid://cwl623d45d1hn" path="res://基米入侵/静流1/技能4.gif/frame-065.png" id="240_ky0rv"]
+[ext_resource type="Texture2D" uid="uid://bgk1jpcd70xy6" path="res://基米入侵/静流1/技能4.gif/frame-066.png" id="241_5fnk3"]
+[ext_resource type="Texture2D" uid="uid://c8a0fxsk5hp5" path="res://基米入侵/静流1/技能4.gif/frame-067.png" id="242_shmof"]
+[ext_resource type="Texture2D" uid="uid://c2anwu0id055n" path="res://基米入侵/静流1/技能4.gif/frame-068.png" id="243_0fxh6"]
+[ext_resource type="Texture2D" uid="uid://bo3bsq0ew4ylk" path="res://基米入侵/静流1/技能4.gif/frame-069.png" id="244_pcj1s"]
+[ext_resource type="Texture2D" uid="uid://bp5lsdl06spkj" path="res://基米入侵/静流1/技能4.gif/frame-070.png" id="245_qk5qb"]
+[ext_resource type="Texture2D" uid="uid://0qt1njva5lyd" path="res://基米入侵/静流1/技能4.gif/frame-071.png" id="246_x0nn6"]
+[ext_resource type="Texture2D" uid="uid://b5ivywtei4aua" path="res://基米入侵/静流1/技能4.gif/frame-072.png" id="247_68nwv"]
+[ext_resource type="Texture2D" uid="uid://cc2jue67mwasn" path="res://基米入侵/静流1/技能4.gif/frame-073.png" id="248_075rw"]
+[ext_resource type="Texture2D" uid="uid://dnh8ryg3ylrm7" path="res://基米入侵/静流1/技能4.gif/frame-074.png" id="249_3vpi7"]
+[ext_resource type="AudioStream" uid="uid://rgmrp1y6eyvf" path="res://基米入侵/静流1/音频/必杀1.mp3" id="271_thc6x"]
+[ext_resource type="AudioStream" uid="uid://cc8ddguvvlt7l" path="res://基米入侵/静流1/音频/必杀2.mp3" id="272_ckybi"]
+[ext_resource type="AudioStream" uid="uid://b8iqq6bncwj4l" path="res://基米入侵/静流1/音频/atk1.mp3" id="273_ucpba"]
+[ext_resource type="AudioStream" uid="uid://cm3gu8yqb7jov" path="res://基米入侵/静流1/音频/atk2.mp3" id="274_exmja"]
+[ext_resource type="AudioStream" uid="uid://bv6jvbgm6rpeu" path="res://基米入侵/静流1/音频/atk3.mp3" id="275_hl0s7"]
+[ext_resource type="AudioStream" uid="uid://8uts0cfscwr1" path="res://基米入侵/Boom.wav" id="351_v66oo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luxf8"]
+atlas = ExtResource("1_8s82d")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_no7fy"]
+atlas = ExtResource("2_23wsk")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s76ou"]
+atlas = ExtResource("3_ixmx2")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlk4l"]
+atlas = ExtResource("4_r56w5")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4dub"]
+atlas = ExtResource("5_3d75w")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y725f"]
+atlas = ExtResource("6_bt82c")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tctay"]
+atlas = ExtResource("7_wo8it")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5hfd"]
+atlas = ExtResource("8_w7vly")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqvuh"]
+atlas = ExtResource("9_hosex")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksiys"]
+atlas = ExtResource("10_yud5h")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2r8pl"]
+atlas = ExtResource("11_mycd2")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u02ro"]
+atlas = ExtResource("12_ejjl1")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ish3o"]
+atlas = ExtResource("13_prc6l")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vd8x7"]
+atlas = ExtResource("14_qcnfl")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70bi2"]
+atlas = ExtResource("15_dw6i5")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7x3i"]
+atlas = ExtResource("16_lba2w")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0b1u2"]
+atlas = ExtResource("17_r5otg")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30ke6"]
+atlas = ExtResource("18_ospxu")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdrmc"]
+atlas = ExtResource("19_mq634")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_scltn"]
+atlas = ExtResource("20_pvbin")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_soahb"]
+atlas = ExtResource("21_ad1y5")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2fcu"]
+atlas = ExtResource("22_wcva1")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a14u8"]
+atlas = ExtResource("23_4ncip")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bbmy"]
+atlas = ExtResource("24_a77gq")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itwnm"]
+atlas = ExtResource("25_x6eq4")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ds0a"]
+atlas = ExtResource("26_uj8ae")
+region = Rect2(0, 0, 1910, 999)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdafp"]
+atlas = ExtResource("75_ltwqb")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnsrj"]
+atlas = ExtResource("76_qqx1c")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tu6d"]
+atlas = ExtResource("77_g6cdr")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4htwg"]
+atlas = ExtResource("78_32jmf")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih0he"]
+atlas = ExtResource("79_ajotf")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0xsx"]
+atlas = ExtResource("80_5gq2k")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4gpx"]
+atlas = ExtResource("81_n5ngt")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrmpw"]
+atlas = ExtResource("82_1t51n")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbvbu"]
+atlas = ExtResource("83_i7xlg")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wl184"]
+atlas = ExtResource("84_06adp")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hu25l"]
+atlas = ExtResource("85_0oekl")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdelr"]
+atlas = ExtResource("86_pbhif")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfcqg"]
+atlas = ExtResource("87_pk437")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnnro"]
+atlas = ExtResource("88_qb4wk")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pvqd"]
+atlas = ExtResource("89_3tdlv")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u4cq"]
+atlas = ExtResource("90_tucjr")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wq81f"]
+atlas = ExtResource("91_xg7m4")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hg7wx"]
+atlas = ExtResource("92_xk103")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sp6fv"]
+atlas = ExtResource("93_25vhc")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thc6x"]
+atlas = ExtResource("94_h7hnc")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckybi"]
+atlas = ExtResource("95_7srww")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucpba"]
+atlas = ExtResource("96_upuo2")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exmja"]
+atlas = ExtResource("97_nf6ra")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hl0s7"]
+atlas = ExtResource("98_uiwvo")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_806bl"]
+atlas = ExtResource("99_05r3w")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ycrj"]
+atlas = ExtResource("100_pogw6")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnqyo"]
+atlas = ExtResource("101_63k7l")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kafrl"]
+atlas = ExtResource("102_mcbir")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_356op"]
+atlas = ExtResource("103_xtmpl")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h51nq"]
+atlas = ExtResource("104_m5dy3")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jq4i"]
+atlas = ExtResource("105_wo5oq")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ulhe"]
+atlas = ExtResource("106_4ayqs")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4wli"]
+atlas = ExtResource("107_f8cjm")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci3jm"]
+atlas = ExtResource("108_fxlye")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsfmw"]
+atlas = ExtResource("109_37tg0")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3i08"]
+atlas = ExtResource("110_mlkyt")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvv7i"]
+atlas = ExtResource("111_35bcf")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5bqc"]
+atlas = ExtResource("112_uuw8s")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pmpl"]
+atlas = ExtResource("113_k67b2")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdjcc"]
+atlas = ExtResource("114_xtf0d")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipor6"]
+atlas = ExtResource("115_43xrx")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d05jv"]
+atlas = ExtResource("116_1e7wk")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mj7f"]
+atlas = ExtResource("117_qgbva")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3xuu"]
+atlas = ExtResource("118_7ruq1")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kypna"]
+atlas = ExtResource("58_jscyi")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri7w4"]
+atlas = ExtResource("59_cxr13")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n1fd"]
+atlas = ExtResource("60_tqc2k")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8ulo"]
+atlas = ExtResource("61_mct1f")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gy5q7"]
+atlas = ExtResource("62_wcf10")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blku5"]
+atlas = ExtResource("63_vf16i")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_usgdk"]
+atlas = ExtResource("64_b55y2")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k60j5"]
+atlas = ExtResource("65_5ljgk")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skppw"]
+atlas = ExtResource("66_gw2fe")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kikpv"]
+atlas = ExtResource("67_ai8c1")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hno5l"]
+atlas = ExtResource("68_oodeg")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltwqb"]
+atlas = ExtResource("69_vprn8")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqx1c"]
+atlas = ExtResource("70_heo5l")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6cdr"]
+atlas = ExtResource("71_qf3fr")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a88xs"]
+atlas = ExtResource("27_vk2os")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2b7nc"]
+atlas = ExtResource("28_frae4")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cycpw"]
+atlas = ExtResource("29_8tkhu")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kg5n5"]
+atlas = ExtResource("30_vvmrh")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n04q"]
+atlas = ExtResource("31_ctdi1")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1lc65"]
+atlas = ExtResource("32_tm067")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfedo"]
+atlas = ExtResource("33_yrqbe")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v83wg"]
+atlas = ExtResource("34_moo34")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2exw"]
+atlas = ExtResource("35_08slv")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tui2o"]
+atlas = ExtResource("36_05mpk")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv67u"]
+atlas = ExtResource("37_3s44m")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60f2c"]
+atlas = ExtResource("38_61dda")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fm1jp"]
+atlas = ExtResource("39_46c84")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2ima"]
+atlas = ExtResource("40_n2s2s")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hko2f"]
+atlas = ExtResource("41_uopp5")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_haibi"]
+atlas = ExtResource("42_xsdam")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te2gy"]
+atlas = ExtResource("43_4o4ne")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vngp3"]
+atlas = ExtResource("44_tf7rf")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luyv6"]
+atlas = ExtResource("45_mk560")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl4eh"]
+atlas = ExtResource("46_ljqoe")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6t5s0"]
+atlas = ExtResource("47_lsxi5")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fpge"]
+atlas = ExtResource("48_ci0vg")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yt45f"]
+atlas = ExtResource("49_d28j6")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1fug"]
+atlas = ExtResource("50_fwtge")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxrwd"]
+atlas = ExtResource("51_l2yq8")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvt8q"]
+atlas = ExtResource("52_xple8")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kubm8"]
+atlas = ExtResource("53_ov5xq")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhkfu"]
+atlas = ExtResource("54_m2qvu")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ec0ii"]
+atlas = ExtResource("55_kyjaq")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk4ln"]
+atlas = ExtResource("56_fiwvg")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pexga"]
+atlas = ExtResource("57_4q3ye")
+region = Rect2(0, 0, 1327, 982)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_32jmf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luxf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no7fy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s76ou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlk4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4dub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y725f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tctay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5hfd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqvuh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksiys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2r8pl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u02ro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ish3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vd8x7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70bi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7x3i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0b1u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30ke6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdrmc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_scltn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_soahb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2fcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a14u8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bbmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itwnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ds0a")
+}],
+"loop": false,
+"name": &"atk",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_y2fcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_a14u8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_6bbmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_itwnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_7ds0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_a88xs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2b7nc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_cycpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_kg5n5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_0n04q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_1lc65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_rfedo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_v83wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_h2exw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_tui2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_nv67u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_60f2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_fm1jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_x2ima")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_hko2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_haibi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_te2gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_vngp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_luyv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_xl4eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_6t5s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_0fpge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_yt45f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_w1fug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_bxrwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_uvt8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_kubm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_nhkfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ec0ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yk4ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pexga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_kypna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ri7w4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_4n1fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_a8ulo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_gy5q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_blku5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_usgdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_k60j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_skppw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_kikpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_hno5l")
+}],
+"loop": false,
+"name": &"atk2",
+"speed": 23.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("75_wq81f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_hg7wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_sp6fv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_thc6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_ckybi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_ucpba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_exmja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_hl0s7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_806bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_0ycrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_gnqyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_kafrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_356op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_h51nq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_8jq4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_4ulhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_h4wli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_ci3jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_tsfmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_n3i08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_pvv7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_v5bqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_0pmpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_hdjcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_ipor6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_d05jv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_2mj7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_g3xuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_b7gvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_ruylm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_8gaed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_kmgcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_eo45e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_h3r3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_s3rvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_iujvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_20u0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_odd3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_fs6rs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_pb8en")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_nmq2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_puic3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_cu13q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_vo523")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_ydhxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_8ps50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_4u5g7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_82owu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_sgd6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_6ljub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_gysfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_jqhff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_176l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_cjqfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_ddsd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_447yp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_d5rm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_62deh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_5u71m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_awyr5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_ubv3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_76sus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_k1kxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_c8m8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_32sei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_iqer4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_sg5tg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_pfxnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_cwqxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_tsqsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_swxkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_ijejg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_05gqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_g3opp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_rreww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_4lvon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_v0pkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_pfsr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_5byx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_y8hwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_kfmni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_v66oo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_i7f8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_3h37w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_4on2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_4jgma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_hcwmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_7gdsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_mxdno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_w8kxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_k538v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_u8j6m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_a7a6m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_w1bga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_5742s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_6673f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_nj06k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_3v1q4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_1jgmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_s4mfh")
+}],
+"loop": false,
+"name": &"atk3",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("176_6h77o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_anoeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_4mtch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_axtcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_nl7od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_to3p6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_k1e8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_r46fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_pou3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_bogvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_ea870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_clqmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_bcl8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_lidfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_6ty20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_sa8wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_jd30v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_nt1a5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_xl551")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_pf786")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_qyppa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_0v7qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_43b0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_aflmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_4vu11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_m1od2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_6r1vx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_yci0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_7h2yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_xg21e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_pjedd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_jnw8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_3vpno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_s6bgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_npljh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_iqqii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_ndh2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_yw1vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_h6d8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_88phd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_tgcjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_fofbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_tw8sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_bi6y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_l8b2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("221_mgeav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_vy85c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_kdpw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_nf634")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_yv48v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_ereqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_ni4vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("228_piyg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("229_1fxv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("230_up8dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("231_panv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("232_oftdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("233_koci4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("234_sa200")
+}, {
+"duration": 1.0,
+"texture": ExtResource("235_82vui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("236_xw7sk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_ls4lh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_637oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_c8ecc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_ky0rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("241_5fnk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("242_shmof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("243_0fxh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("244_pcj1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("245_qk5qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("246_x0nn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("247_68nwv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("248_075rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("249_3vpi7")
+}],
+"loop": false,
+"name": &"atk4",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdafp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnsrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tu6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4htwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih0he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q0xsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4gpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrmpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbvbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wl184")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hu25l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdelr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfcqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnnro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pvqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8u4cq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wq81f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hg7wx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sp6fv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thc6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckybi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ucpba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_exmja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hl0s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_806bl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ycrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnqyo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kafrl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_356op")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h51nq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jq4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ulhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4wli")
+}],
+"loop": false,
+"name": &"death",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ci3jm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsfmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3i08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvv7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5bqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pmpl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdjcc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipor6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d05jv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mj7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3xuu")
+}],
+"loop": false,
+"name": &"hited",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kypna")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri7w4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n1fd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8ulo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gy5q7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blku5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_usgdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k60j5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skppw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kikpv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hno5l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltwqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqx1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6cdr")
+}],
+"loop": false,
+"name": &"run",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a88xs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2b7nc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cycpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kg5n5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n04q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1lc65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfedo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v83wg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2exw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tui2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv67u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60f2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fm1jp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2ima")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hko2f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_haibi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te2gy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vngp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luyv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xl4eh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6t5s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fpge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yt45f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1fug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxrwd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvt8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kubm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nhkfu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ec0ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk4ln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pexga")
+}],
+"loop": true,
+"name": &"待机",
+"speed": 23.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajotf"]
+size = Vector2(20.057, 27.8289)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8s82d"]
+size = Vector2(75.25, 67.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cycpw"]
+size = Vector2(58.742, 22.3423)
+
+[node name="player2" type="CharacterBody2D" node_paths=PackedStringArray("status_label", "hp_bar", "mp_bar", "animator") groups=["player"]]
+script = ExtResource("1_23wsk")
+status_label = NodePath("CanvasLayer/status_label")
+hp_bar = NodePath("CanvasLayer/status_label/hp_bar")
+mp_bar = NodePath("CanvasLayer/status_label/mp_bar")
+animator = NodePath("AnimatedSprite2D")
+light_sword_scene = ExtResource("2_exmja")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(13.2506, -14.8056)
+scale = Vector2(0.151109, 0.151109)
+sprite_frames = SubResource("SpriteFrames_32jmf")
+animation = &"atk4"
+autoplay = "待机"
+frame = 73
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9.57605, 11.2448)
+scale = Vector2(1.13915, 1.20416)
+shape = SubResource("RectangleShape2D_ajotf")
+
+[node name="AttackArea" type="Area2D" parent="." groups=["player_attack"]]
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(69, 3.4375)
+shape = SubResource("RectangleShape2D_8s82d")
+
+[node name="AttackArea2" type="Area2D" parent="." groups=["player_attack"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea2"]
+position = Vector2(0.00012207, 3.05176e-05)
+scale = Vector2(19.6763, 29.1681)
+shape = SubResource("RectangleShape2D_cycpw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="status_label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="hp_bar" type="TextureProgressBar" parent="CanvasLayer/status_label"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="mp_bar" type="TextureProgressBar" parent="CanvasLayer/status_label"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="hited1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("164_2b7nc")
+
+[node name="hited2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("165_cycpw")
+
+[node name="hited3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("166_kg5n5")
+
+[node name="death1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("167_0n04q")
+
+[node name="death2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("168_1lc65")
+
+[node name="death3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("169_rfedo")
+
+[node name="atk2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("170_cycpw")
+
+[node name="atk3-1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("271_thc6x")
+
+[node name="atk3-2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("272_ckybi")
+
+[node name="atk3-3" type="AudioStreamPlayer" parent="."]
+
+[node name="atk1-1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("273_ucpba")
+
+[node name="atk1-2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("274_exmja")
+
+[node name="atk1-3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("275_hl0s7")
+
+[node name="Boom" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("351_v66oo")
+
+[node name="BOOM" type="AudioStreamPlayer" parent="."]

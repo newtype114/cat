@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2i0yva6teway"]
+
+[ext_resource type="Script" uid="uid://bbdduhwqbirni" path="res://scripts/select.gd" id="1_r8cik"]
+[ext_resource type="Texture2D" uid="uid://bpmncv8o03pe3" path="res://基米入侵/璃乃/璃乃.png" id="1_rtpy7"]
+[ext_resource type="Texture2D" uid="uid://bkaisghaxrr26" path="res://基米入侵/静流1/静流.png" id="2_r8cik"]
+[ext_resource type="AudioStream" uid="uid://bfkfn0rgikt4s" path="res://基米入侵/哈基米.mp3" id="4_ylm78"]
+[ext_resource type="AudioStream" uid="uid://dxsshhilv414c" path="res://基米入侵/静流1/音频/战斗开始.mp3" id="5_dlvm4"]
+[ext_resource type="AudioStream" uid="uid://dpe2awjr1v16q" path="res://基米入侵/璃乃/战斗开始.mp3" id="6_gppmw"]
+
+[node name="select" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_r8cik")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1224.0
+offset_bottom = 713.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(239, 314)
+scale = Vector2(0.587692, 0.587692)
+texture = ExtResource("1_rtpy7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(884, 296)
+scale = Vector2(0.494615, 0.494615)
+texture = ExtResource("2_r8cik")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 544.0
+offset_right = 259.0
+offset_bottom = 621.0
+theme_override_font_sizes/font_size = 50
+text = "璃乃"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 544.0
+offset_right = 948.0
+offset_bottom = 621.0
+theme_override_font_sizes/font_size = 50
+text = "静流"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ylm78")
+
+[node name="start2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_dlvm4")
+
+[node name="start1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_gppmw")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

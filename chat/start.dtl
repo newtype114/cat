@@ -1,0 +1,38 @@
+兰德索尔平静的一天
+休比拉斯
+join jl center [animation="Instant In" length="0.2"]
+jl: 今天弟弟君会来买可丽饼吗
+jl: 嘛~算了，还是先好好工作吧
+不好啦，静流姐，十万火鸡
+join ln right [animation="Slide From Right"]
+[wait time="0.2"]
+update jl left [move_time="0.1"]
+jl: 冷静点，璃乃。还有，是十万火急
+jl: 所以，发生什么事了
+ln: 总之先回公会之家吧，晶姐有话和你说
+leave jl
+leave ln
+。。。。。。。。。
+[signal arg="Change"]
+[wait time="1.0"]
+join j center
+j: 哟，你们回来了
+j: 情况紧急，我就长话短说了，有一群奇怪的魔物出现在森林了
+update j left
+join jl right
+jl: 奇怪的魔物？
+leave j
+[wait time="0.2"]
+join ln left
+ln: 对啊，像猫一样，但是会哈气，还会攻击人
+jl: 这可不行！
+leave ln
+[wait time="0.2"]
+join j left
+j: 先暂时叫它们耄耋好了，耄耋现在已经侵入了
+j: 我已经联系美食殿堂让他们在城市里疏散人群
+j: 璃乃，你去森林里解决一波一波准备入侵的耄耋
+j: 静流，你去抵御已经大举入侵的耄耋
+j: 我去看看能不能找到它们的源头
+j: 好，解散
+[signal arg="end"]

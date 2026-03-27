@@ -1,0 +1,283 @@
+[gd_scene load_steps=21 format=3 uid="uid://bsu3cap6jpcn0"]
+
+[ext_resource type="Script" uid="uid://iohhs4gvyfo8" path="res://scripts/gamemanager.gd" id="1_lbhrr"]
+[ext_resource type="Texture2D" uid="uid://b1uo5qqg5cg8r" path="res://AssetBundle/Sprites/ForestBackground.png" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://bbspxsi7ej0hy" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://doeh0mq45yxhb" path="res://scenes/cat2.tscn" id="5_iywne"]
+[ext_resource type="AudioStream" uid="uid://bfkfn0rgikt4s" path="res://基米入侵/哈基米.mp3" id="6_p57ef"]
+[ext_resource type="FontFile" uid="uid://bfnbrh5ptlmvh" path="res://AssetBundle/Uranus_Pixel_11Px.ttf" id="7_gee14"]
+[ext_resource type="PackedScene" uid="uid://u7pfyw8fbaf0" path="res://scenes/speed_cat.tscn" id="7_u5sy4"]
+[ext_resource type="Script" uid="uid://ch3jxrw0b6iyh" path="res://scripts/pause_mean.gd" id="8_kvpfn"]
+[ext_resource type="Texture2D" uid="uid://c8t7bqyd7wfu4" path="res://基米入侵/PauseMenuResource/pause_normal.png" id="9_dinhu"]
+[ext_resource type="Script" uid="uid://chcncpwmc502k" path="res://scenes/level_clear_ui.gd" id="9_trtic"]
+[ext_resource type="FontFile" uid="uid://c7a8coeb1wex2" path="res://基米入侵/PauseMenuResource/ark-pixel-12px-monospaced-zh_cn.ttf" id="10_ir15t"]
+[ext_resource type="Texture2D" uid="uid://b72g05l75avt0" path="res://基米入侵/PauseMenuResource/pause_pressed.png" id="10_kvuet"]
+[ext_resource type="Texture2D" uid="uid://hc01i5hw44c3" path="res://基米入侵/PauseMenuResource/pause_hover.png" id="11_trtic"]
+[ext_resource type="PackedScene" uid="uid://cdx4chlvbupt6" path="res://scenes/r_cat.tscn" id="12_dinhu"]
+[ext_resource type="AudioStream" uid="uid://bito24cbwqx13" path="res://基米入侵/耄耋/吼叫.mp3" id="13_kvuet"]
+[ext_resource type="AudioStream" uid="uid://b0tp3qmlb8q2x" path="res://基米入侵/璃乃/声音/声音/滑雪大冒险.mp3" id="16_ca42v"]
+[ext_resource type="AudioStream" uid="uid://b8fr3paqhaatn" path="res://基米入侵/璃乃/声音/声音/魂斗罗.mp3" id="17_rysoc"]
+[ext_resource type="AudioStream" uid="uid://bbk4f2itd2qpq" path="res://基米入侵/静流1/音频/雷普神！何宇-战歌.mp3" id="18_ssvqc"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yqjtg"]
+distance = -41.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lnu2h"]
+distance = 1.00005
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("score_label", "game_over_label", "level_clear_panel", "finish_label")]
+z_index = 1
+y_sort_enabled = true
+script = ExtResource("1_lbhrr")
+cat_scene = ExtResource("5_iywne")
+speed_cat_scene = ExtResource("7_u5sy4")
+r_cat_scene = ExtResource("12_dinhu")
+score_label = NodePath("CanvasLayer/Label")
+game_over_label = NodePath("CanvasLayer/gameover")
+level_clear_panel = NodePath("CanvasLayer/LevelClearUI")
+finish_label = NodePath("finish")
+
+[node name="Player" parent="." instance=ExtResource("2_yqjtg")]
+
+[node name="background1" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-240, -17.5)
+scale = Vector2(1, 1.36071)
+texture = ExtResource("1_uwrxv")
+
+[node name="background2" type="Sprite2D" parent="background1"]
+position = Vector2(478, 0.73491)
+scale = Vector2(1, 0.994753)
+texture = ExtResource("1_uwrxv")
+
+[node name="background" type="Sprite2D" parent="background1"]
+position = Vector2(240, 0.73491)
+scale = Vector2(1, 0.994753)
+texture = ExtResource("1_uwrxv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.88, 1.88)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-266, 76)
+rotation = 1.5731
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("WorldBoundaryShape2D_yqjtg")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(265, 1)
+rotation = -1.56564
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource("WorldBoundaryShape2D_yqjtg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3, 173)
+shape = SubResource("WorldBoundaryShape2D_lnu2h")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-60, 44)
+rotation = -3.14159
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-61.9998, 34.0003)
+shape = SubResource("WorldBoundaryShape2D_lnu2h")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_p57ef")
+volume_db = -16.865
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 992.0
+offset_top = 12.0
+offset_right = 1040.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("7_gee14")
+theme_override_font_sizes/font_size = 20
+text = "得分："
+
+[node name="gameover" type="Label" parent="CanvasLayer"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -11.5
+offset_right = 32.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0.0177324, 0.0177324, 0.0177324, 1)
+theme_override_fonts/font = ExtResource("7_gee14")
+theme_override_font_sizes/font_size = 50
+text = "游戏结束"
+
+[node name="Label2" type="Label" parent="CanvasLayer/gameover"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 69.0
+offset_right = 131.0
+offset_bottom = 92.0
+text = "thank you"
+
+[node name="LevelClearUI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("9_trtic")
+
+[node name="NextLevelButton" type="Button" parent="CanvasLayer/LevelClearUI"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 478.0
+offset_right = 434.0
+offset_bottom = 509.0
+scale = Vector2(4.795, 4.38561)
+theme_override_font_sizes/font_size = 10
+text = "点击空格下一关"
+
+[node name="Label" type="Label" parent="CanvasLayer/LevelClearUI"]
+layout_mode = 0
+offset_left = 2.00003
+offset_top = 8.0
+offset_right = 27.0
+offset_bottom = 49.0
+scale = Vector2(3.86542, 1.87026)
+theme_override_fonts/font = ExtResource("10_ir15t")
+theme_override_font_sizes/font_size = 35
+
+[node name="PauseUI" type="CanvasLayer" parent="." node_paths=PackedStringArray("pause_panel", "bgm_player")]
+process_mode = 3
+script = ExtResource("8_kvpfn")
+pause_panel = NodePath("Control/PausePanel")
+bgm_player = NodePath("../bgm")
+
+[node name="Control" type="Control" parent="PauseUI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="PauseUI/Control"]
+layout_mode = 0
+offset_left = 1132.0
+offset_top = 5.0
+offset_right = 1148.0
+offset_bottom = 21.0
+texture_normal = ExtResource("9_dinhu")
+texture_pressed = ExtResource("10_kvuet")
+texture_hover = ExtResource("11_trtic")
+
+[node name="PausePanel" type="Panel" parent="PauseUI/Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PauseUI/Control/PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -102.0
+offset_right = 101.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_gee14")
+theme_override_font_sizes/font_size = 50
+text = "游戏暂停"
+
+[node name="ResumeButton" type="Button" parent="PauseUI/Control/PausePanel"]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 282.0
+offset_right = 672.0
+offset_bottom = 353.0
+theme_override_fonts/font = ExtResource("7_gee14")
+theme_override_font_sizes/font_size = 45
+text = "返回游戏"
+
+[node name="QuitButton" type="Button" parent="PauseUI/Control/PausePanel"]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 382.0
+offset_right = 673.0
+offset_bottom = 435.0
+theme_override_fonts/font = ExtResource("7_gee14")
+theme_override_font_sizes/font_size = 45
+text = "退出游戏"
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="吼叫" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_kvuet")
+volume_db = -24.36
+
+[node name="bgm2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_ca42v")
+
+[node name="bgm3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_rysoc")
+
+[node name="BGM(hy)" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_ssvqc")
+
+[node name="finish" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 538.0
+offset_top = 274.0
+offset_right = 666.0
+offset_bottom = 297.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(6.257e-07, 0, 0.520973, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "关卡完成，跳转中.。。"
+
+[connection signal="timeout" from="Timer" to="." method="_spawn_cat"]
+[connection signal="timeout" from="Timer2" to="." method="_speed_cat"]
+[connection signal="pressed" from="CanvasLayer/LevelClearUI/NextLevelButton" to="." method="_on_next_level_button_pressed"]
+[connection signal="pressed" from="PauseUI/Control/TextureButton" to="PauseUI" method="pause"]
+[connection signal="pressed" from="PauseUI/Control/PausePanel/ResumeButton" to="PauseUI" method="unpause"]
+[connection signal="pressed" from="PauseUI/Control/PausePanel/QuitButton" to="PauseUI" method="quit_game"]
+[connection signal="timeout" from="Timer3" to="." method="_r_cat"]

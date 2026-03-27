@@ -1,0 +1,98 @@
+[gd_scene load_steps=14 format=3 uid="uid://bnj77bbv5qig3"]
+
+[ext_resource type="Script" uid="uid://c6rfdmv4h3bln" path="res://scripts/start.gd" id="1_u80x2"]
+[ext_resource type="Texture2D" uid="uid://cxpsbu1urtfp1" path="res://基米入侵/star.png" id="2_bodal"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdmts"]
+atlas = ExtResource("2_bodal")
+region = Rect2(0, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0auqf"]
+atlas = ExtResource("2_bodal")
+region = Rect2(341, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y16t7"]
+atlas = ExtResource("2_bodal")
+region = Rect2(682, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ge6i"]
+atlas = ExtResource("2_bodal")
+region = Rect2(0, 341, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8itgj"]
+atlas = ExtResource("2_bodal")
+region = Rect2(341, 341, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tn317"]
+atlas = ExtResource("2_bodal")
+region = Rect2(682, 341, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8nf6"]
+atlas = ExtResource("2_bodal")
+region = Rect2(0, 682, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgjjs"]
+atlas = ExtResource("2_bodal")
+region = Rect2(341, 682, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1nvso"]
+atlas = ExtResource("2_bodal")
+region = Rect2(682, 682, 341, 341)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gsp51"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdmts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0auqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y16t7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ge6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8itgj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tn317")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8nf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgjjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1nvso")
+}],
+"loop": true,
+"name": &"idel",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8uic"]
+size = Vector2(43, 45)
+
+[node name="star" type="Area2D"]
+script = ExtResource("1_u80x2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.38419e-07, 1)
+scale = Vector2(0.124789, 0.124789)
+sprite_frames = SubResource("SpriteFrames_gsp51")
+animation = &"idel"
+frame_progress = 0.129953
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
+scale = Vector2(0.356716, 0.356716)
+shape = SubResource("RectangleShape2D_r8uic")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
